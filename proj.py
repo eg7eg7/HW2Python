@@ -3,9 +3,11 @@ import unittest
 
 def half(matrix, k=1):
     # TODO requirement - one lined body...
-    if matrix is []:
-        return []
 
+    if k is 0:
+        for i, row in enumerate(matrix):
+            for k in range(i):
+                del matrix[i][0]
     if k is 1:
         next_num_elements = 1
         for row_num in range(len(matrix)):
@@ -13,13 +15,16 @@ def half(matrix, k=1):
                 if next_num_elements < i+1:
                     del matrix[row_num][i]
             next_num_elements += 1
+
     return matrix
 
 
 def half_test():
     assert (half([], 0) == [])
     assert (half([], 1) == [])
-    assert (half([[1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]]) == [[1],[6,7],[11, 12, 13],[16, "stam", 18, 19]])
+    assert (half([[1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]]) == [[1], [6, 7], [11, 12, 13], [16, "stam", 18, 19]])
+    assert (half([[1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]], 0) == [[1, 2, 3, 4, 5], [7,  8,  9, "spam"], [13, 14, 15], [19, 20]])
+    assert (half([[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]], 0) == [[1, 2, 3, 4, 5], [2, 3, 4, 5], [8, 9, "spam"], [14, 15], [20]])
 
 
 # helper function - free to use where needed to debug
