@@ -2,15 +2,12 @@ import unittest
 
 
 def half(matrix, k=1):
-
     return [
         row_list[row_index:len(row_list)]
         if k==0
         else row_list[0:row_index+1] if k==1
         else [] for row_index, row_list in enumerate(matrix)
     ]
-
-    # TODO requirement - one lined body...
 
 
 class testHW(unittest.TestCase):
