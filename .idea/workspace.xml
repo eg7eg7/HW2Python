@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1120572-2839-4477-953e-51405b8354b5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/HW2Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HW2Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/eg7eg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/eg7eg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,35 +20,9 @@
       <file leaf-file-name="proj.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="4" column="109" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myFile.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myFile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#655#825#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hw1_Gadi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../HW1_Gadi/Hw1_Gadi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1887" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../HW1Python/project.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-521" />
           </provider>
         </entry>
       </file>
@@ -79,24 +57,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="HW2Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW2Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW1Python/project.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/HW1Python/project.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -111,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for proj.testHW.test_half">
+  <component name="RunManager" selected="Python.main">
     <configuration name="" type="PythonConfigurationType" factoryName="Python">
       <module name="HW2Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,34 +151,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 19h 39m 56s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 23m 28s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 19h 40m 32s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 44m 27s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 19h 40m 38s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 44m 40s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 19h 40m 43s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 45m 29s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 19h 40m 53s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 45m 39s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 19h 43m 45s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 22h 58m 07s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 03m 38s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 22h 58m 16s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 04m 01s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 23h 01m 51s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 04m 06s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 23h 02m 25s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 21h 04m 11s.xml">
+    <history-entry file="Unittests_for_proj_testHW_test_half - 2018.05.04 at 23h 05m 01s.xml">
       <configuration name="Unittests for proj.testHW.test_half" configurationId="tests" />
     </history-entry>
   </component>
@@ -227,17 +192,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23814541" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41125542" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2642089" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32896176" />
-      <window_info id="Structure" order="2" visible="true" weight="0.13593256" />
+      <window_info id="Structure" order="2" side_tool="true" visible="true" weight="0.13588442" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32896176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -247,31 +211,39 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31745413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34178188" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/proj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proj.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -300,30 +272,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../HW1Python/project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-521" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../HW1_Gadi/Hw1_Gadi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887" />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/HW1Python/project.py" />
+    <entry file="file://$USER_HOME$/HW1_Gadi/Hw1_Gadi.py" />
     <entry file="file://$PROJECT_DIR$/myFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#655#825#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="68">
+          <caret line="4" column="109" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
         </state>
       </provider>
     </entry>
