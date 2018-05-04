@@ -17,6 +17,11 @@ def decrypt(string, key=3):
     return new_string
 
 
+def merge(iterable1, iterable2)
+    for num1, num2 in
+
+    # TODO "raise StopIteration" WHEN no more numbers
+
 class TestHW(unittest.TestCase):
 
     def test_half(self):
@@ -39,6 +44,16 @@ class TestHW(unittest.TestCase):
         self.assertEqual(decrypt("a", 26), "a")
         self.assertEqual(decrypt("a", 52), "a")
         self.assertEqual(decrypt("a", 0), "a")
+
+    def test_merge(self):
+        def divisable_by(n, limit):
+            k = 0
+            while k < limit:
+                yield k
+                k += n
+
+        g = divisable_by(4, 21)
+        self.assertEqual(next(merge(g, [2, 3, 7, 10, 11])), (0, 2, 3, 4, 7, 8, 10, 11, 12, 16, 20, ...))
 
 
 if __name__ == "__main__":

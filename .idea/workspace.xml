@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1120572-2839-4477-953e-51405b8354b5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/eg7eg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/eg7eg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,17 @@
       <file leaf-file-name="proj.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="213">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7347">
+              <caret line="475" column="8" selection-start-line="475" selection-start-column="8" selection-end-line="475" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -194,10 +204,10 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.23814541" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2642089" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2642089" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32896176" />
-      <window_info id="Structure" order="2" side_tool="true" visible="true" weight="0.13588442" />
+      <window_info active="true" id="Structure" order="2" side_tool="true" visible="true" weight="0.13588442" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32896176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -277,10 +287,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7347">
+          <caret line="475" column="8" selection-start-line="475" selection-start-column="8" selection-end-line="475" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="213">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
