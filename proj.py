@@ -7,8 +7,11 @@ def half(matrix, k=1):
 
 def decrypt(string, key=3):
     new_string = ''
+    size_alphabet = 26
     for ch in string:
-        new_string += chr(ord(ch) - key)
+        if ord('a') <= ord(ch) <= ord('z'):
+            new_ch = chr(ord('a') + (((ord(ch) - (key % size_alphabet)) - ord('a')) % size_alphabet))
+            new_string += new_ch
     return new_string
 
 
@@ -28,6 +31,11 @@ class TestHW(unittest.TestCase):
 
     def test_decrypt(self):
         self.assertEqual(decrypt("vrorqjdqgwkdqnviruwkhilvk"), "solongandthanksforthefish")
+        self.assertEqual(decrypt("a"), "x")
+        self.assertEqual(decrypt("a", 1), "z")
+        self.assertEqual(decrypt("a", 26), "a")
+        self.assertEqual(decrypt("a", 52), "a")
+
 
 
 # helper function - free to use where needed to debug
