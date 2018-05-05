@@ -1,8 +1,14 @@
 import unittest
 
-
+''' function returns upper half of matrix if k=1. 
+If k=0 function returns lower half of matrix. If k!=0 or k!=1 empty list will be returned'''
 def half(matrix, k=1):
-    return [row_list[row_index:len(row_list)] if k is 0 else row_list[0:row_index + 1] if k is 1 else [] for row_index, row_list in enumerate(matrix)]
+    return [
+            row_list[row_index:len(row_list)] if k is 0
+            else row_list[0:row_index + 1] if k is 1
+            else []
+            for row_index, row_list in enumerate(matrix)
+    ]
 
 
 # function decrypts only parts of the string that includes small letters of the english alphabet
@@ -17,10 +23,15 @@ def decrypt(string, key=3):
     return new_string
 
 
-def merge(iterable1, iterable2)
-    for num1, num2 in
-
-    # TODO "raise StopIteration" WHEN no more numbers
+def merge(iterable1, iterable2):
+    res = []
+    for x in iterable1:
+        res.append(x)
+    for x in iterable2:
+        res.append(x)
+    res = sorted(res)
+    for x in res:
+        yield x
 
 class TestHW(unittest.TestCase):
 
@@ -53,7 +64,13 @@ class TestHW(unittest.TestCase):
                 k += n
 
         g = divisable_by(4, 21)
-        self.assertEqual(next(merge(g, [2, 3, 7, 10, 11])), (0, 2, 3, 4, 7, 8, 10, 11, 12, 16, 20, ...))
+        self.assertEqual(next(merge(g, [2, 3, 7, 10, 11])),0)
+
+        res = []
+        g = divisable_by(4, 21)
+        for i in merge(g, [2, 3, 7, 10, 11]):
+            res.append(i)
+        self.assertEqual(res,[0, 2, 3, 4, 7, 8, 10, 11, 12, 16, 20])
 
 
 if __name__ == "__main__":
