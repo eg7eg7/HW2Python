@@ -1,7 +1,7 @@
 import unittest
 
 ''' function returns upper half of matrix if k=1. 
-If k=0 function returns lower half of matrix. If k!=0 or k!=1 empty list will be returned'''
+If k=0 function returns lower half of matrix. If k!=0 and k!=1 empty list will be returned'''
 def half(matrix, k=1):
     return [
             row_list[row_index:len(row_list)] if k is 0
