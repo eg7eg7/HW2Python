@@ -31,9 +31,10 @@ def merge(iterable1, iterable2):
     res = sorted(res)
     for x in res:
         yield x
+    raise StopIteration
 
 def rank(file_name,how_to_rank='total'):
-    f=open(file_name)
+    f = open(file_name)
     (countries, gold, silver, bronze, results_by_rank_type, index_to_yield, res_to_yield) = ([], [], [],[], [],  0, " ")
     (gold_weight, silver_weight, bronze_weight) = (3, 2, 1)
 
@@ -59,7 +60,9 @@ def rank(file_name,how_to_rank='total'):
         del(results_by_rank_type[index_to_yield])
         del(countries[index_to_yield])
         yield res_to_yield
+
     f.close()
+    raise StopIteration
 
 class TestHW(unittest.TestCase):
 
