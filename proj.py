@@ -1,4 +1,5 @@
 import unittest
+from itertools import *
 
 ''' function returns upper half of matrix if k=1. 
 If k=0 function returns lower half of matrix. If k!=0 and k!=1 empty list will be returned'''
@@ -38,7 +39,7 @@ def merge(iterable1, iterable2):
     # raise StopIteration
 
 
-def rank(file_name,how_to_rank='total'):
+def rank(file_name, how_to_rank='total'):
     f = open(file_name)
     (countries, gold, silver, bronze, results_by_rank_type, index_to_yield, res_to_yield) = ([], [], [],[], [],  0, " ")
     (gold_weight, silver_weight, bronze_weight) = (3, 2, 1)
@@ -71,6 +72,14 @@ def rank(file_name,how_to_rank='total'):
     # raise StopIteration
 
 
+# procedure given in example
+def divisable_by(n, limit):
+    k = 0
+    while k < limit:
+        yield k
+        k += n
+
+
 class TestHW(unittest.TestCase):
 
     def test_half(self):
@@ -95,20 +104,15 @@ class TestHW(unittest.TestCase):
         self.assertEqual(decrypt("a", 0), "a")
 
     def test_merge(self):
-        def divisable_by(n, limit):
-            k = 0
-            while k < limit:
-                yield k
-                k += n
-
         g = divisable_by(4, 21)
-        self.assertEqual(next(merge(g, [2, 3, 7, 10, 11])),0)
+        my_merge_iter = merge(g, [2, 3, 7, 10, 11])
+        self.assertEqual(next(my_merge_iter), 0)
+        self.assertEqual(next(my_merge_iter), 2)
+        self.assertEqual(list(islice(my_merge_iter, 9)), [3, 4, 7, 8, 10, 11, 12, 16, 20])
 
-        res = []
-        g = divisable_by(4, 21)
-        for i in merge(g, [2, 3, 7, 10, 11]):
-            res.append(i)
-        self.assertEqual(res,[0, 2, 3, 4, 7, 8, 10, 11, 12, 16, 20])
+        g = divisable_by(3, 35)
+        my_merge_iter = merge(g, [2, 5, 8, 10])
+        self.assertEqual(list(islice(my_merge_iter, 8)), [0, 2, 3, 5, 6, 8, 9, 10])
 
     def test_rank(self):
         file_name = 'winners_test.txt'
@@ -135,3 +139,4 @@ class TestHW(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
