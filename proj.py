@@ -31,7 +31,8 @@ def merge(iterable1, iterable2):
     res = sorted(res)
     for x in res:
         yield x
-    raise StopIteration
+    return
+    # raise StopIteration
 
 def rank(file_name,how_to_rank='total'):
     f = open(file_name)
@@ -62,7 +63,8 @@ def rank(file_name,how_to_rank='total'):
         yield res_to_yield
 
     f.close()
-    raise StopIteration
+    return
+    # raise StopIteration
 
 class TestHW(unittest.TestCase):
 
