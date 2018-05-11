@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1120572-2839-4477-953e-51405b8354b5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/HW2Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HW2Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +22,8 @@
       <file leaf-file-name="proj.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
+            <state relative-caret-position="225">
+              <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -57,10 +60,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1632" />
-    <option name="y" value="270" />
-    <option name="width" value="1791" />
-    <option name="height" value="1749" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -84,7 +87,7 @@
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/proj.py" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -124,9 +127,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\eg7eg\AppData\Local\Programs\Python\Python36-32\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/proj.py" />
@@ -202,11 +205,12 @@
       <module name="HW2Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\DAN\Dropbox\!!!Workspaces\Python\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/proj.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -247,34 +251,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_proj_py - 2018.05.05 at 18h 50m 50s.xml">
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 50m 04s.xml">
       <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_proj_py - 2018.05.05 at 18h 51m 54s.xml">
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 50m 12s.xml">
       <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_proj_py - 2018.05.07 at 19h 01m 21s.xml">
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 50m 23s.xml">
       <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_proj_py - 2018.05.08 at 16h 53m 02s.xml">
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 50m 30s.xml">
       <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_proj_py - 2018.05.08 at 16h 55m 23s.xml">
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 52m 09s.xml">
       <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_proj_py - 2018.05.08 at 16h 55m 25s.xml">
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 52m 14s.xml">
       <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_TestHW_test_rank - 2018.05.11 at 00h 37m 12s.xml">
-      <configuration name="Unittests for proj.TestHW.test_rank" configurationId="tests" />
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 52m 16s.xml">
+      <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_TestHW_test_rank - 2018.05.11 at 00h 38m 12s.xml">
-      <configuration name="Unittests for proj.TestHW.test_rank" configurationId="tests" />
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 18h 52m 17s.xml">
+      <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_proj_TestHW_test_rank - 2018.05.11 at 00h 38m 15s.xml">
-      <configuration name="Unittests for proj.TestHW.test_rank" configurationId="tests" />
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 19h 01m 14s.xml">
+      <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 00h 38m 40s.xml">
+    <history-entry file="Unittests_in_proj_py - 2018.05.11 at 19h 03m 08s.xml">
       <configuration name="Unittests in proj.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -288,16 +292,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47685185" visible="true" weight="0.10659899" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47619048" visible="true" weight="0.10642782" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32896176" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15625" />
-      <window_info id="Structure" order="2" sideWeight="0.5231481" side_tool="true" visible="true" weight="0.10659899" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20454545" />
+      <window_info id="Structure" order="2" sideWeight="0.52380955" side_tool="true" visible="true" weight="0.10642782" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32896176" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32982087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39784947" />
@@ -468,8 +472,8 @@
     <entry file="file://$PROJECT_DIR$/myFile.py" />
     <entry file="file://$PROJECT_DIR$/proj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
+        <state relative-caret-position="225">
+          <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
