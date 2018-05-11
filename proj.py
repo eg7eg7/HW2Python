@@ -82,10 +82,10 @@ def divisable_by(n, limit):
 
 
 class UserInterface:
-    text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k, matrix is manipulated according to parameter as shown in the example."
+    text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k,\n matrix is manipulated according to parameter as shown in the example."
     text_q2 = "Q2 : decrypt function receives a text and a decryption key. returns the text after decryption"
-    text_q3 = "Q3 : the generator function merge receives two iterable lists, calling the function each time returns values from both iterables in an ascending order"
-    text_q4 = "Q4 : generator function rank function reads from a text file information of countries and their winnings in the olympic games.\n each call returns the name of winning countries in a descending order, sorted by parameter (total, weighted, gold, silver, arad)."
+    text_q3 = "Q3 : the generator function merge receives two iterable lists,\n calling the function each time returns values from both iterables in an ascending order"
+    text_q4 = "Q4 : generator function rank function reads from a text file information\n of countries and their winnings in the olympic games.\n each call returns the name of winning countries in a descending order,\n sorted by parameter (total, weighted, gold, silver, arad)."
     text_info = "Eden Dupont {204808596}, Daniil Rolnik {334018009}"
     window_title = "Python2 Homework"
     guide_text = "Choose a question from the drop-down menu:"
@@ -104,7 +104,7 @@ class UserInterface:
 
     def __init__(self):
         self.root = Tk()
-        self.root.geometry("1000x500")
+        self.root.geometry("650x300")
         self.root.title(self.window_title)
         self.questions_frame = Frame(self.root)
         self.questions_frame.grid(row=0, column=0, sticky="sw")
@@ -141,17 +141,18 @@ class UserInterface:
         self.q_info_label.config(text=self.q_info_list[self.current_option])
 
     def execute_pressed(self):
+        # TODO make matrix look more like a matrix
         string = ""
         if self.current_option == 0:
             function_output = half(self.half_param1, self.half_param2)
             string += ("half function with\nmatrix:" + str(self.half_param1) + "\nk: " + str(self.half_param2) + "\nresults with :\n\n" + str(function_output) + "\n\n")
-            # TODO add to string param1
         if self.current_option == 1:
             function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
-
+            string += ("half function with\nstring: " + self.decrypt_param1 + "\ndecryption key: " + str(self.decrypt_param2) + "\n\nresults with :\n\n" + function_output + "\n\n")
         self.function_output_label.config(text=string)
 
     def edit_param(self):
+        # TODO create functions
         pass
 
 
