@@ -79,65 +79,6 @@ def divisable_by(n, limit):
         k += n
 
 
-def open_gui():
-
-    root = Tk()
-    # execute_window = Tk()
-    # edit_defaults_window = Tk()
-    execute_text = "Execute"
-    edit_defaults_text = "Edit defaults"
-    padding_y = 5
-    text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k, matrix is manipulated according to parameter as shown in the example."
-    text_q2 = "Q2 : decrypt function receives a text and a decryption key. returns the text after decryption"
-    text_q3 = "Q3 : the generator function merge receives two iterable lists, calling the function each time returns values from both iterables in an ascending order"
-    text_q4 = "Q4 : generator function rank function reads from a text file information of countries and their winnings in the olympic games.\n each call returns the name of winning countries in a descending order, sorted by parameter (total, weighted, gold, silver, arad)."
-    text_info = "Eden Dupont {204808596}, Daniil Rolnik {334018009}"
-
-    q1_frame = Frame(root)
-    q1_frame.grid(row=0, column=0, sticky="sw")
-    q1_exec_button = Button(q1_frame, text=execute_text, fg="red")
-    q1_edit_defaults_button = Button(q1_frame, text=edit_defaults_text)
-    q1_info_label = Label(q1_frame, text=text_q1, justify=LEFT)
-    q1_info_label.grid(row=0, column=0)
-    q1_exec_button.grid(row=1, column=0, sticky="sw")
-    q1_edit_defaults_button.grid(row=2, column=0, sticky="sw", pady = padding_y)
-
-    q2_frame = Frame(root)
-    q2_frame.grid(row=1, column=0, sticky="sw")
-    q2_exec_button = Button(q2_frame, text=execute_text, fg="red")
-    q2_edit_defaults_button = Button(q2_frame, text=edit_defaults_text)
-    q2_info_label = Label(q2_frame, text=text_q2, justify=LEFT)
-    q2_info_label.grid(row=0, column=0)
-    q2_exec_button.grid(row=1, column=0, sticky="sw")
-    q2_edit_defaults_button.grid(row=2, column=0, sticky="sw", pady = padding_y)
-
-    q3_frame = Frame(root)
-    q3_frame.grid(row=2, column=0, sticky="sw")
-    q3_exec_button = Button(q3_frame, text=execute_text, fg="red")
-    q3_edit_defaults_button = Button(q3_frame, text=edit_defaults_text)
-    q3_info_label = Label(q3_frame, text=text_q3, justify=LEFT)
-    q3_info_label.grid(row=0, column=0)
-    q3_exec_button.grid(row=1, column=0, sticky="sw")
-    q3_edit_defaults_button.grid(row=2, column=0, sticky="sw", pady=padding_y)
-
-    q4_frame = Frame(root)
-    q4_frame.grid(row=3, column=0, sticky="sw")
-    q4_exec_button = Button(q4_frame, text=execute_text, fg="red")
-    q4_edit_defaults_button = Button(q4_frame, text=edit_defaults_text)
-    q4_info_label = Label(q4_frame, text=text_q4, justify=LEFT)
-    q4_info_label.grid(row=0, column=0)
-    q4_exec_button.grid(row=1, column=0, sticky="sw")
-    q4_edit_defaults_button.grid(row=2, column=0, sticky="sw", pady=padding_y)
-
-    info_frame = Frame(root)
-    info_frame.grid(row=4, column=0, sticky="sw")
-    info_label = Label(info_frame, text=text_info, justify=LEFT)
-    info_label.grid(row=0, column=0)
-
-    root.mainloop()
-
-
-
 class QuestionsGUI:
     text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k, matrix is manipulated according to parameter as shown in the example."
     text_q2 = "Q2 : decrypt function receives a text and a decryption key. returns the text after decryption"
@@ -153,6 +94,7 @@ class QuestionsGUI:
     q_list = [option1, option2, option3, option4]
     q_info_list = [text_q1, text_q2, text_q3, text_q4]
     default_q = 0
+    current_option = default_q
 
     def __init__(self):
         self.root = Tk()
@@ -160,7 +102,7 @@ class QuestionsGUI:
         self.questions_frame = Frame(self.root)
         self.questions_frame.grid(row=0, column=0, sticky="sw")
         self.user_choice = StringVar(self.questions_frame)
-        self.user_choice.set(self.q_list[self.default_q])
+        self.user_choice.set(self.q_list[self.current_option])
         self.option_menu = OptionMenu(self.questions_frame, self.user_choice, *self.q_list, command=self.refresh_frame)
         self.guideLabel = Label(self.questions_frame, text=self.guide_text)
         self.guideLabel.grid(row=0, column=0)
@@ -169,19 +111,25 @@ class QuestionsGUI:
         self.q_frame = Frame(self.root)
         self.q_frame.grid(row=1, column=0, sticky="sw")
         self.q_exec_button = Button(self.q_frame, text="Execute", fg="red", command=self.execute_pressed)
-        self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.default_q], justify=LEFT)
+        self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.current_option], justify=LEFT)
         self.q_info_label.grid(row=0, column=0)
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
 
-        info_frame = Frame(self.root)
-        info_frame.grid(row=4, column=0, sticky="sw")
-        info_label = Label(info_frame, text=self.text_info, justify=LEFT)
-        info_label.grid(row=0, column=0)
+        self.function_output = Frame(self.root)
+        self.function_output.grid(row=2, column=0, sticky="sw")
+        self.function_output_label = Label(self.function_output, justify=LEFT)
+        self.function_output_label.grid(row=0, column=0)
+
+        self.info_frame = Frame(self.root)
+        self.info_frame.grid(row=3, column=0, sticky="sw")
+        self.info_label = Label(self.info_frame, text=self.text_info, justify=LEFT)
+        self.info_label.grid(row=0, column=0)
 
         self.root.mainloop()
 
     def refresh_frame(self, choice):
-        pass
+        self.current_option = self.q_list.index(choice)
+        self.q_info_label.config(text=self.q_info_list[self.current_option])
 
     def execute_pressed(self):
         pass

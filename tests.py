@@ -2,6 +2,7 @@ import unittest
 from itertools import *
 from proj import *
 
+
 class TestHW(unittest.TestCase):
 
     def test_half(self):
@@ -44,6 +45,7 @@ class TestHW(unittest.TestCase):
         self.assertEqual(list(islice(rank(file_name, 'silver'), 3)), ["\"USA\":794", "\"Great-Britain\":295", "\"Israel\":1"])
         self.assertEqual(list(islice(rank(file_name, 'arad'), 3)), ["\"USA\":705", "\"Great-Britain\":289", "\"Israel\":7"])
         self.assertEqual(list(islice(rank(file_name, 'svsd'), 3)), ["\"Israel\":-1", "\"USA\":-1", "\"Great-Britain\":-1"])
+
 
 if __name__ == "__main__":
     unittest.main(exit=False)
