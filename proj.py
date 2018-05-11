@@ -1,5 +1,7 @@
 from tkinter import *
 
+file_path = 'winners_test.txt'
+
 ''' function returns upper half of matrix if k=1. 
 If k=0 function returns lower half of matrix. If k!=0 and k!=1 empty list will be returned'''
 
@@ -38,7 +40,7 @@ def merge(iterable1, iterable2):
     # raise StopIteration
 
 
-def rank(file_name, how_to_rank='total'):
+def rank(file_name=file_path, how_to_rank='total'):
     f = open(file_name)
     (countries, gold, silver, bronze, results_by_rank_type, index_to_yield, res_to_yield) = ([], [], [],[], [],  0, " ")
     (gold_weight, silver_weight, bronze_weight) = (3, 2, 1)
@@ -79,7 +81,7 @@ def divisable_by(n, limit):
         k += n
 
 
-class QuestionsGUI:
+class UserInterface:
     text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k, matrix is manipulated according to parameter as shown in the example."
     text_q2 = "Q2 : decrypt function receives a text and a decryption key. returns the text after decryption"
     text_q3 = "Q3 : the generator function merge receives two iterable lists, calling the function each time returns values from both iterables in an ascending order"
@@ -87,17 +89,22 @@ class QuestionsGUI:
     text_info = "Eden Dupont {204808596}, Daniil Rolnik {334018009}"
     window_title = "Python2 Homework"
     guide_text = "Choose a question from the drop-down menu:"
-    option1 = "Question 1"
-    option2 = "Question 2"
-    option3 = "Question 3"
-    option4 = "Question 4"
+    option1 = "Question 1 - half"
+    option2 = "Question 2 - decrypt"
+    option3 = "Question 3 - merge"
+    option4 = "Question 4 - rank"
     q_list = [option1, option2, option3, option4]
     q_info_list = [text_q1, text_q2, text_q3, text_q4]
     default_q = 0
     current_option = default_q
+    half_param1 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]]
+    half_param2 = 1
+    decrypt_param1 = "vrorqjdqgwkdqnviruwkhilvk"
+    decrypt_param2 = 3
 
     def __init__(self):
         self.root = Tk()
+        self.root.geometry("1000x500")
         self.root.title(self.window_title)
         self.questions_frame = Frame(self.root)
         self.questions_frame.grid(row=0, column=0, sticky="sw")
@@ -111,9 +118,11 @@ class QuestionsGUI:
         self.q_frame = Frame(self.root)
         self.q_frame.grid(row=1, column=0, sticky="sw")
         self.q_exec_button = Button(self.q_frame, text="Execute", fg="red", command=self.execute_pressed)
+        self.q_edit_button = Button(self.q_frame, text="Edit question parameters", fg="purple", command=self.edit_param)
         self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.current_option], justify=LEFT)
         self.q_info_label.grid(row=0, column=0)
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
+        self.q_edit_button.grid(row=1, column=1, sticky="sw")
 
         self.function_output = Frame(self.root)
         self.function_output.grid(row=2, column=0, sticky="sw")
@@ -132,8 +141,19 @@ class QuestionsGUI:
         self.q_info_label.config(text=self.q_info_list[self.current_option])
 
     def execute_pressed(self):
+        string = ""
+        if self.current_option == 0:
+            function_output = half(self.half_param1, self.half_param2)
+            string += ("half function with\nmatrix:" + str(self.half_param1) + "\nk: " + str(self.half_param2) + "\nresults with :\n\n" + str(function_output) + "\n\n")
+            # TODO add to string param1
+        if self.current_option == 1:
+            function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
+
+        self.function_output_label.config(text=string)
+
+    def edit_param(self):
         pass
 
 
 if __name__ == "__main__":
-    gui = QuestionsGUI()
+    UserInterface()
