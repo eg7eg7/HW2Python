@@ -88,43 +88,42 @@ def open_gui():
     text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k, matrix is manipulated according to parameter as shown in the example."
     text_q2 = "Q2 : decrypt function receives a text and a decryption key. returns the text after decryption"
     text_q3 = "Q3 : the generator function merge receives two iterable lists, calling the function each time returns values from both iterables in an ascending order"
-    text_q4 = "Q4 : generator function rank function reads from a text file information of countries and their winnings in the olympic games. each call returns the name of winning countries in a descending order, sorted by parameter (total, weighted, gold, silver, arad)"
+    text_q4 = "Q4 : generator function rank function reads from a text file information of countries and their winnings in the olympic games.\n each call returns the name of winning countries in a descending order, sorted by parameter (total, weighted, gold, silver, arad)."
     text_info = "Eden Dupont {204808596}, Daniil Rolnik {334018009}"
 
     q1_frame = Frame(root)
     q1_frame.grid(row=0, column=0, sticky="sw")
     q1_exec_button = Button(q1_frame, text="Execute", fg="red")
     q1_info_label = Label(q1_frame, text=text_q1, justify=LEFT)
-    q1_info_label.pack(side=TOP)
-    q1_exec_button.pack()
+    q1_info_label.grid(row=0, column=0)
+    q1_exec_button.grid(row=1, column=0, sticky="sw")
 
     q2_frame = Frame(root)
     q2_frame.grid(row=1, column=0, sticky="sw")
     q2_exec_button = Button(q2_frame, text="Execute", fg="red")
     q2_info_label = Label(q2_frame, text=text_q2, justify=LEFT)
-    q2_info_label.pack(side=TOP)
-    q2_exec_button.pack()
+    q2_info_label.grid(row=0, column=0)
+    q2_exec_button.grid(row=1, column=0, sticky="sw")
 
     q3_frame = Frame(root)
     q3_frame.grid(row=2, column=0, sticky="sw")
     q3_exec_button = Button(q3_frame, text="Execute", fg="red")
     q3_info_label = Label(q3_frame, text=text_q3, justify=LEFT)
-    q3_info_label.pack(side=TOP)
-    q3_exec_button.pack()
+    q3_info_label.grid(row=0, column=0)
+    q3_exec_button.grid(row=1, column=0, sticky="sw")
 
     q4_frame = Frame(root)
     q4_frame.grid(row=3, column=0, sticky="sw")
     q4_exec_button = Button(q4_frame, text="Execute", fg="red")
     q4_info_label = Label(q4_frame, text=text_q4, justify=LEFT)
-    q4_info_label.pack(side=TOP)
-    q4_exec_button.pack()
+    q4_info_label.grid(row=0, column=0)
+    q4_exec_button.grid(row=1, column=0, sticky="sw")
 
     info_frame = Frame(root)
     info_frame.grid(row=4, column=0, sticky="sw")
     info_label = Label(info_frame, text=text_info, justify=LEFT)
-    info_label.pack(side=TOP)
+    info_label.grid(row=0, column=0)
     root.mainloop()
-
 
 
 class TestHW(unittest.TestCase):
