@@ -96,21 +96,25 @@ class UserInterface:
     option3 = "Question 3 - merge"
     option4 = "Question 4 - rank"
     q_list = [option1, option2, option3, option4]
-    q_info_list = [text_q1, text_q2, text_q3, text_q4]
-    default_q = 0
-    current_option = default_q
     half_param1 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]]
     half_param2 = 1
     decrypt_param1 = "vrorqjdqgwkdqnviruwkhilvk"
     decrypt_param2 = 3
-    merge_param1 = divisable_by(4,21)
+    merge_param1 = divisable_by(4, 21)
     merge_param1_name = "divisable by"
     merge_param2 = [3, 4, 7, 8, 10, 11, 12, 16, 20]
     merge_param2_name = "list"
     rank_param1 = 'winners_test.txt'
     rank_param2 = "total"
+    q_info_list = [text_q1, text_q2, text_q3, text_q4]
+    q_param1_list = [str(half_param1), decrypt_param1, merge_param1_name, rank_param1]
+    q_param2_list = [half_param2, decrypt_param2, merge_param2, rank_param2]
+    default_q = 0
+    current_option = default_q
+
 
     def __init__(self):
+
         self.root = Tk()
         self.root.geometry("650x300")
         self.root.title(self.window_title)
@@ -124,13 +128,21 @@ class UserInterface:
         self.option_menu.grid(row=0, column=1)
 
         self.q_frame = Frame(self.root)
-        self.q_frame.grid(row=1, column=0, sticky="sw")
+        self.q_frame.grid(row=1, column=0, columnspan=2, sticky="sw")
         self.q_exec_button = Button(self.q_frame, text="Execute", fg="red", command=self.execute_pressed)
         self.q_edit_button = Button(self.q_frame, text="Edit question parameters", fg="purple", command=self.edit_param)
         self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.current_option], justify=LEFT)
         self.q_info_label.grid(row=0, column=0)
+        self.entry1 = Entry(self.q_frame)
+        self.entry2 = Entry(self.q_frame)
+        self.entry1.insert(0, self.q_param1_list[self.current_option])
+        self.entry2.insert(0,self.q_param2_list[self.current_option])
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
-        self.q_edit_button.grid(row=1, column=1, sticky="sw")
+        self.default_val_lbl = Label(self.q_frame, text="Default values:")
+        # self.q_edit_button.grid(row=2, column=0, sticky="sw", pady=5)
+        self.default_val_lbl.grid(row=2,column=0,sticky="sw",pady=5)
+        self.entry1.grid(row=3, column=0, sticky='NSEW')
+        self.entry2.grid(row=4,column=0, sticky='NSEW', pady=5)
 
         self.function_output = Frame(self.root)
         self.function_output.grid(row=2, column=0, sticky="sw")
@@ -168,6 +180,7 @@ class UserInterface:
 
     def edit_param(self):
         # TODO create functions
+
         pass
 
 
