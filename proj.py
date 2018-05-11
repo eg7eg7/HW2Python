@@ -1,5 +1,6 @@
 import unittest
 from itertools import *
+from tkinter import *
 
 ''' function returns upper half of matrix if k=1. 
 If k=0 function returns lower half of matrix. If k!=0 and k!=1 empty list will be returned'''
@@ -81,6 +82,13 @@ def divisable_by(n, limit):
         k += n
 
 
+def open_gui():
+    root=Tk()
+    theLabel = Label(root, text="Window")
+    theLabel.pack()
+    root.mainloop()
+
+
 class TestHW(unittest.TestCase):
 
     def test_half(self):
@@ -126,6 +134,7 @@ class TestHW(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(exit=False)
+    open_gui()
 
 

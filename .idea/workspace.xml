@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1120572-2839-4477-953e-51405b8354b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/eg7eg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/eg7eg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="proj.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="122" column="60" selection-start-line="122" selection-start-column="60" selection-end-line="122" selection-end-column="60" />
+            <state relative-caret-position="583">
+              <caret line="137" column="14" selection-start-line="137" selection-start-column="14" selection-end-line="137" selection-end-column="14" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -293,13 +291,13 @@
     <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47704083" visible="true" weight="0.2370168" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47704083" visible="true" weight="0.10503709" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32896176" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39784947" />
-      <window_info id="Structure" order="2" sideWeight="0.5229592" side_tool="true" visible="true" weight="0.2370168" />
+      <window_info id="Structure" order="2" sideWeight="0.5229592" side_tool="true" visible="true" weight="0.10503709" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32896176" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32982087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39784947" />
@@ -460,8 +458,8 @@
     <entry file="file://$PROJECT_DIR$/myFile.py" />
     <entry file="file://$PROJECT_DIR$/proj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="122" column="60" selection-start-line="122" selection-start-column="60" selection-end-line="122" selection-end-column="60" />
+        <state relative-caret-position="583">
+          <caret line="137" column="14" selection-start-line="137" selection-start-column="14" selection-end-line="137" selection-end-column="14" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
