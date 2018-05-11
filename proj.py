@@ -47,11 +47,14 @@ def rank(file_name, how_to_rank='total'):
     for index, line in enumerate(f.readlines()):
         line_lst = line.split()
         (countries.append(line_lst[0]), gold.append(line_lst[1]), silver.append(line_lst[2]), bronze.append(line_lst[3]))
+    f.close()
 
     results_by_rank_type = [
         (int(gold[index]) + int(silver[index]) + int(bronze[index])) if how_to_rank == 'total'
         else (int(gold[index])*gold_weight + int(silver[index])*silver_weight + int(bronze[index])*bronze_weight) if how_to_rank == 'weighted'
         else (int(gold[index])) if how_to_rank == 'gold'
+        else (int(silver[index])) if how_to_rank == 'silver'
+        else (int(bronze[index])) if how_to_rank == 'arad'
         else -1
         for index in range(len(countries))
     ]
@@ -67,9 +70,7 @@ def rank(file_name, how_to_rank='total'):
         del(countries[index_to_yield])
         yield res_to_yield
 
-    f.close()
     return
-    # raise StopIteration
 
 
 # procedure given in example
@@ -116,27 +117,15 @@ class TestHW(unittest.TestCase):
 
     def test_rank(self):
         file_name = 'winners_test.txt'
-        result = []
-        for nation in rank(file_name, 'total'):
-            result.append(nation)
-        self.assertEqual(result,["\"USA\":2521", "\"Great-Britain\":847", "\"Israel\":9"])
-
-        result = []
-        for nation in rank(file_name, 'weighted'):
-            result.append(nation)
-        self.assertEqual(result, ["\"USA\":5359", "\"Great-Britain\":1668", "\"Israel\":12"])
-
-        result = []
-        for nation in rank(file_name, 'gold'):
-            result.append(nation)
-        self.assertEqual(result, ["\"USA\":1022", "\"Great-Britain\":263", "\"Israel\":1"])
-
-        result = []
-        for nation in rank(file_name, 'svsd'):
-            result.append(nation)
-        self.assertEqual(result, ["\"Israel\":-1", "\"USA\":-1", "\"Great-Britain\":-1"])
+        self.assertEqual(list(islice(rank(file_name, 'total'), 3)), ["\"USA\":2521", "\"Great-Britain\":847", "\"Israel\":9"])
+        self.assertEqual(list(islice(rank(file_name, 'weighted'), 3)), ["\"USA\":5359", "\"Great-Britain\":1668", "\"Israel\":12"])
+        self.assertEqual(list(islice(rank(file_name, 'gold'), 3)), ["\"USA\":1022", "\"Great-Britain\":263", "\"Israel\":1"])
+        self.assertEqual(list(islice(rank(file_name, 'silver'), 3)), ["\"USA\":794", "\"Great-Britain\":295", "\"Israel\":1"])
+        self.assertEqual(list(islice(rank(file_name, 'arad'), 3)), ["\"USA\":705", "\"Great-Britain\":289", "\"Israel\":7"])
+        self.assertEqual(list(islice(rank(file_name, 'svsd'), 3)), ["\"Israel\":-1", "\"USA\":-1", "\"Great-Britain\":-1"])
 
 
 if __name__ == "__main__":
     unittest.main()
+
 
