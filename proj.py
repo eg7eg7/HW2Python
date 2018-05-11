@@ -1,4 +1,6 @@
 from tkinter import *
+from itertools import *
+
 
 file_path = 'winners_test.txt'
 
@@ -101,6 +103,12 @@ class UserInterface:
     half_param2 = 1
     decrypt_param1 = "vrorqjdqgwkdqnviruwkhilvk"
     decrypt_param2 = 3
+    merge_param1 = divisable_by(4,21)
+    merge_param1_name = "divisable by"
+    merge_param2 = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+    merge_param2_name = "list"
+    rank_param1 = 'winners_test.txt'
+    rank_param2 = "total"
 
     def __init__(self):
         self.root = Tk()
@@ -146,10 +154,17 @@ class UserInterface:
         if self.current_option == 0:
             function_output = half(self.half_param1, self.half_param2)
             string += ("half function with\nmatrix:" + str(self.half_param1) + "\nk: " + str(self.half_param2) + "\nresults with :\n\n" + str(function_output) + "\n\n")
-        if self.current_option == 1:
+        elif self.current_option == 1:
             function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
-            string += ("half function with\nstring: " + self.decrypt_param1 + "\ndecryption key: " + str(self.decrypt_param2) + "\n\nresults with :\n\n" + function_output + "\n\n")
+            string += ("decrypt function with\nstring: " + self.decrypt_param1 + "\ndecryption key: " + str(self.decrypt_param2) + "\n\nresults with :\n\n" + function_output + "\n\n")
+        elif self.current_option == 2:
+            function_output = list(islice(merge(self.merge_param1, [2, 3, 7, 10, 11]), 9))
+            string += ("merge function with\n iterable1 is: " + str(self.merge_param1_name) + "\niterable2 is: " + str(self.merge_param1_name) + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
+        elif self.current_option == 3:
+            function_output = list(islice(rank(self.rank_param1, self.rank_param2), 3))
+            string += ("rank function with\n filename: " + str(self.rank_param1) + "\nby: " + str(self.rank_param2) + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
         self.function_output_label.config(text=string)
+
 
     def edit_param(self):
         # TODO create functions
