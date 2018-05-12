@@ -35,7 +35,7 @@ def merge(iterable1, iterable2):
         res.append(x)
     for x in iterable2:
         res.append(x)
-    res = sorted(res)
+    res = sorted(list(set(res)))
     for x in res:
         yield x
     return
@@ -112,22 +112,25 @@ class UserInterface:
     half_param2_user = 1
     decrypt_param1_user = "stam"
     decrypt_param2_user = 3
-    merge_param1_user = divisable_by(4, 21)
-    merge_param2_user = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+    merge_param1_user = ""
+    merge_param2_user = ""
     rank_param1_user = 'winners_test.txt'
     rank_param2_user = "total"
 
     q_info_list = [text_q1, text_q2, text_q3, text_q4]
-    q_param1_list = [str(half_param1), decrypt_param1, merge_param1_name, rank_param1]
+    q_param1_list = [half_param1, decrypt_param1, merge_param1, rank_param1]
     q_param2_list = [half_param2, decrypt_param2, merge_param2, rank_param2]
+    list_of_funcs = [half, decrypt, merge, rank]
     q_param1_user_list = []
     q_param1_user_list = []
+    q_param1_user = ""
+    q_param2_user = ""
     default_q = 0
     current_option = default_q
 
     def __init__(self):
         dimension_x = 700
-        dimension_y = 600
+        dimension_y = 800
 
         self.root = Tk()
         self.root.geometry(str(dimension_x)+"x"+str(dimension_y))
@@ -172,12 +175,12 @@ class UserInterface:
 
 
         self.function_output = Frame(self.root)
-        self.function_output.grid(row=2, column=0, sticky="sw")
+        self.function_output.grid(row=3, column=0, sticky="sw")
         self.function_output_label = Label(self.function_output, justify=LEFT)
         self.function_output_label.grid(row=0, column=0)
 
         self.info_frame = Frame(self.root)
-        self.info_frame.grid(row=3, column=0, sticky="sw")
+        self.info_frame.grid(row=4, column=0, sticky="sw")
         self.info_label = Label(self.info_frame, text=self.text_info, justify=LEFT)
         self.info_label.grid(row=0, column=0)
 
@@ -200,24 +203,39 @@ class UserInterface:
 
     def execute_pressed(self):
         # TODO make matrix look more like a matrix
-        string = ""
-        if self.current_option == 0:
-            function_output = half(self.half_param1, self.half_param2)
-            string += ("half function with\nmatrix:" + self.q_param1_list[self.current_option] + "\nk: " + self.q_param2_list[self.current_option] + "\nresults with :\n\n" + str(function_output) + "\n\n")
-        elif self.current_option == 1:
-            function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
-            string += ("decrypt function with\nstring: " + self.q_param1_list[self.current_option] + "\ndecryption key: " + self.q_param2_list[self.current_option] + "\n\nresults with :\n\n" + function_output + "\n\n")
-        elif self.current_option == 2:
-            function_output = list(islice(merge(self.merge_param1, [2, 3, 7, 10, 11]), 9))
-            string += ("merge function with\n iterable1 is: " + self.q_param1_list[self.current_option] + "\niterable2 is: " + self.q_param2_list[self.current_option] + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
-        elif self.current_option == 3:
-            function_output = list(islice(rank(self.rank_param1, self.rank_param2), 3))
-            string += ("rank function with\n filename: " + self.q_param1_list[self.current_option] + "\nby: " + self.q_param2_list[self.current_option] + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
+        param1 = self.q_param1_list[self.current_option]
+        param2 = self.q_param2_list[self.current_option]
+        tmp_lst = []
+
+        func = self.list_of_funcs[self.current_option]
+
+        if self.current_option == 0 or self.current_option == 1:
+            function_output = str(func(param1, param2))
+
+        elif self.current_option == 2 or self.current_option == 3:
+            function_output = str(list(islice(func(param1, param2), 0, None)))
+
+        string = "Result:\n"+function_output
+
+        # if self.current_option == 0:
+        #     function_output = half(self.half_param1, self.half_param2)
+        #     string += ("half function with\nmatrix:" + param1 + "\nk: " + param2 + "\nresults with :\n\n" + str(function_output) + "\n\n")
+        # elif self.current_option == 1:
+        #     function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
+        #     string += ("decrypt function with\nstring: " + param1 + "\ndecryption key: " + param2 + "\n\nresults with :\n\n" + function_output + "\n\n")
+        # elif self.current_option == 2:
+        #     function_output = list(islice(merge(self.merge_param1, [2, 3, 7, 10, 11]), 9))
+        #     string += ("merge function with\n iterable1 is: " + param1 + "\niterable2 is: " + param2  + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
+        # elif self.current_option == 3:
+        #     function_output = list(islice(rank(self.rank_param1, self.rank_param2), 3))
+        #     string += ("rank function with\n filename: " + param1 + "\nby: " + param2 + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
         self.function_output_label.config(text=string)
 
     def edit_param(self):
 
-        pass
+        self.q_param1_user = self.text_area1.get('1.0','end')
+        self.q_param2_user = self.text_area2.get('1.0','end')
+
 
 
 if __name__ == "__main__":
