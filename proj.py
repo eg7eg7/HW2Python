@@ -113,9 +113,11 @@ class UserInterface:
     current_option = default_q
 
     def __init__(self):
+        dimension_x = 800
+        dimension_y = 600
 
         self.root = Tk()
-        self.root.geometry("650x400")
+        self.root.geometry(str(dimension_x)+"x"+str(dimension_y))
         self.root.title(self.window_title)
         self.questions_frame = Frame(self.root)
         self.questions_frame.grid(row=0, column=0, sticky="sw")
@@ -127,23 +129,43 @@ class UserInterface:
         self.option_menu.grid(row=0, column=1)
 
         self.q_frame = Frame(self.root)
+        self.q_value1_frame = Frame(self.q_frame, width=dimension_x, height=dimension_y/4)
+        self.q_value2_frame = Frame(self.q_frame, width=dimension_x, height=dimension_y/4)
+        self.q_value1_frame.grid_propagate(False)
+        self.q_value2_frame.grid_propagate(False)
+
         self.q_frame.grid(row=1, column=0, columnspan=2, sticky="sw")
+        self.q_value1_frame.grid(row=3, column=0, columnspan=2, sticky="sw")
+        self.q_value2_frame.grid(row=5, column=0, columnspan=2, sticky="sw")
         self.q_exec_button = Button(self.q_frame, text="Execute", fg="red", command=self.execute_pressed)
         self.q_edit_button = Button(self.q_frame, text="Edit question parameters", fg="purple", command=self.edit_param)
         self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.current_option], justify=LEFT)
         self.q_info_label.grid(row=0, column=0)
-        self.entry1 = Entry(self.q_frame)
-        self.entry2 = Entry(self.q_frame)
-        self.entry1.insert(0, self.q_param1_list[self.current_option])
-        self.entry2.insert(0, self.q_param2_list[self.current_option])
+        # self.entry1 = Entry(self.q_frame)
+        # self.entry2 = Entry(self.q_frame)
+
+        self.text_area1 = Text(self.q_value1_frame)
+        self.text_area1.insert('1.0', self.q_param1_list[self.current_option])
+        self.text_area2 = Text(self.q_value2_frame)
+        self.text_area2.insert('1.0', self.q_param2_list[self.current_option])
+
+
+        # self.entry1.insert(0, self.q_param1_list[self.current_option])
+        # self.entry2.insert(0, self.q_param2_list[self.current_option])
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
         self.q_edit_button.grid(row=1, column=1, sticky="w")
-        self.default_val_lbl = Label(self.q_frame, text="Default values:")
+        self.default_val1_lbl = Label(self.q_frame, text="Value 1:")
+        self.default_val2_lbl = Label(self.q_frame, text="Value 2:")
         # self.q_edit_button.grid(row=2, column=0, sticky="sw", pady=5)
         # TODO Clean comments
-        self.default_val_lbl.grid(row=2,column=0,sticky="sw",pady=5)
-        self.entry1.grid(row=3, column=0, sticky='W')
-        self.entry2.grid(row=4, column=0, sticky='W', pady=5)
+        self.default_val1_lbl.grid(row=2,column=0,sticky="sw",pady=5)
+        self.default_val2_lbl.grid(row=4, column=0, sticky="sw",pady=5)
+        # self.entry1.grid(row=3,rowspan = 2, column=0, sticky='W')
+        # self.entry2.grid(row=5, rowspan = 2, column=0, sticky='W', pady=5)
+
+        self.text_area1.grid(row=3, column=0)
+        self.text_area2.grid(row=5, column=0)
+
 
         self.function_output = Frame(self.root)
         self.function_output.grid(row=2, column=0, sticky="sw")
