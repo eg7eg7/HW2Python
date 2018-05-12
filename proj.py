@@ -112,11 +112,10 @@ class UserInterface:
     default_q = 0
     current_option = default_q
 
-
     def __init__(self):
 
         self.root = Tk()
-        self.root.geometry("650x300")
+        self.root.geometry("650x400")
         self.root.title(self.window_title)
         self.questions_frame = Frame(self.root)
         self.questions_frame.grid(row=0, column=0, sticky="sw")
@@ -136,13 +135,15 @@ class UserInterface:
         self.entry1 = Entry(self.q_frame)
         self.entry2 = Entry(self.q_frame)
         self.entry1.insert(0, self.q_param1_list[self.current_option])
-        self.entry2.insert(0,self.q_param2_list[self.current_option])
+        self.entry2.insert(0, self.q_param2_list[self.current_option])
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
+        self.q_edit_button.grid(row=1, column=1, sticky="w")
         self.default_val_lbl = Label(self.q_frame, text="Default values:")
         # self.q_edit_button.grid(row=2, column=0, sticky="sw", pady=5)
+        # TODO Clean comments
         self.default_val_lbl.grid(row=2,column=0,sticky="sw",pady=5)
-        self.entry1.grid(row=3, column=0, sticky='NSEW')
-        self.entry2.grid(row=4,column=0, sticky='NSEW', pady=5)
+        self.entry1.grid(row=3, column=0, sticky='W')
+        self.entry2.grid(row=4, column=0, sticky='W', pady=5)
 
         self.function_output = Frame(self.root)
         self.function_output.grid(row=2, column=0, sticky="sw")
@@ -162,10 +163,11 @@ class UserInterface:
 
     def execute_pressed(self):
         # TODO make matrix look more like a matrix
+        # TODO change all functions to use list (self.q_param1_list[self.current_option])
         string = ""
         if self.current_option == 0:
             function_output = half(self.half_param1, self.half_param2)
-            string += ("half function with\nmatrix:" + str(self.half_param1) + "\nk: " + str(self.half_param2) + "\nresults with :\n\n" + str(function_output) + "\n\n")
+            string += ("half function with\nmatrix:" + str(self.q_param1_list[self.current_option]) + "\nk: " + str(self.q_param2_list[self.current_option]) + "\nresults with :\n\n" + str(function_output) + "\n\n")
         elif self.current_option == 1:
             function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
             string += ("decrypt function with\nstring: " + self.decrypt_param1 + "\ndecryption key: " + str(self.decrypt_param2) + "\n\nresults with :\n\n" + function_output + "\n\n")
@@ -177,11 +179,9 @@ class UserInterface:
             string += ("rank function with\n filename: " + str(self.rank_param1) + "\nby: " + str(self.rank_param2) + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
         self.function_output_label.config(text=string)
 
-
     def edit_param(self):
-        # TODO create functions
-
-        pass
+        self.q_param1_list[self.current_option] = self.entry1.get()
+        self.q_param2_list[self.current_option] = self.entry2.get()
 
 
 if __name__ == "__main__":
