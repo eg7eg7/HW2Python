@@ -96,6 +96,7 @@ class UserInterface:
     option3 = "Question 3 - merge"
     option4 = "Question 4 - rank"
     q_list = [option1, option2, option3, option4]
+
     half_param1 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]]
     half_param2 = 1
     decrypt_param1 = "vrorqjdqgwkdqnviruwkhilvk"
@@ -106,14 +107,26 @@ class UserInterface:
     merge_param2_name = "list"
     rank_param1 = 'winners_test.txt'
     rank_param2 = "total"
+
+    half_param1_user = [[]]
+    half_param2_user = 1
+    decrypt_param1_user = "stam"
+    decrypt_param2_user = 3
+    merge_param1_user = divisable_by(4, 21)
+    merge_param2_user = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+    rank_param1_user = 'winners_test.txt'
+    rank_param2_user = "total"
+
     q_info_list = [text_q1, text_q2, text_q3, text_q4]
     q_param1_list = [str(half_param1), decrypt_param1, merge_param1_name, rank_param1]
     q_param2_list = [half_param2, decrypt_param2, merge_param2, rank_param2]
+    q_param1_user_list = []
+    q_param1_user_list = []
     default_q = 0
     current_option = default_q
 
     def __init__(self):
-        dimension_x = 800
+        dimension_x = 700
         dimension_y = 600
 
         self.root = Tk()
@@ -141,30 +154,21 @@ class UserInterface:
         self.q_edit_button = Button(self.q_frame, text="Edit question parameters", fg="purple", command=self.edit_param)
         self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.current_option], justify=LEFT)
         self.q_info_label.grid(row=0, column=0)
-        # self.entry1 = Entry(self.q_frame)
-        # self.entry2 = Entry(self.q_frame)
 
         self.text_area1 = Text(self.q_value1_frame)
-        self.text_area1.insert('1.0', self.q_param1_list[self.current_option])
         self.text_area2 = Text(self.q_value2_frame)
-        self.text_area2.insert('1.0', self.q_param2_list[self.current_option])
 
-
-        # self.entry1.insert(0, self.q_param1_list[self.current_option])
-        # self.entry2.insert(0, self.q_param2_list[self.current_option])
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
         self.q_edit_button.grid(row=1, column=1, sticky="w")
         self.default_val1_lbl = Label(self.q_frame, text="Value 1:")
         self.default_val2_lbl = Label(self.q_frame, text="Value 2:")
-        # self.q_edit_button.grid(row=2, column=0, sticky="sw", pady=5)
         # TODO Clean comments
         self.default_val1_lbl.grid(row=2,column=0,sticky="sw",pady=5)
         self.default_val2_lbl.grid(row=4, column=0, sticky="sw",pady=5)
-        # self.entry1.grid(row=3,rowspan = 2, column=0, sticky='W')
-        # self.entry2.grid(row=5, rowspan = 2, column=0, sticky='W', pady=5)
 
         self.text_area1.grid(row=3, column=0)
         self.text_area2.grid(row=5, column=0)
+        self.refresh_frame() #for first text area values insert
 
 
         self.function_output = Frame(self.root)
@@ -177,33 +181,43 @@ class UserInterface:
         self.info_label = Label(self.info_frame, text=self.text_info, justify=LEFT)
         self.info_label.grid(row=0, column=0)
 
+
         self.root.mainloop()
 
-    def refresh_frame(self, choice):
+    def refresh_frame(self, choice=q_list[0]):
         self.current_option = self.q_list.index(choice)
         self.q_info_label.config(text=self.q_info_list[self.current_option])
 
+        #empty text area before inserting default values
+        self.text_area1.delete('1.0','2.0')
+        self.text_area2.delete('1.0','2.0')
+
+        #insert default values to text areas
+        self.text_area1.insert('1.0', self.q_param1_list[self.current_option])
+        self.text_area2.insert('1.0', self.q_param2_list[self.current_option])
+
+
+
     def execute_pressed(self):
         # TODO make matrix look more like a matrix
-        # TODO change all functions to use list (self.q_param1_list[self.current_option])
         string = ""
         if self.current_option == 0:
             function_output = half(self.half_param1, self.half_param2)
-            string += ("half function with\nmatrix:" + str(self.q_param1_list[self.current_option]) + "\nk: " + str(self.q_param2_list[self.current_option]) + "\nresults with :\n\n" + str(function_output) + "\n\n")
+            string += ("half function with\nmatrix:" + self.q_param1_list[self.current_option] + "\nk: " + self.q_param2_list[self.current_option] + "\nresults with :\n\n" + str(function_output) + "\n\n")
         elif self.current_option == 1:
             function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
-            string += ("decrypt function with\nstring: " + self.decrypt_param1 + "\ndecryption key: " + str(self.decrypt_param2) + "\n\nresults with :\n\n" + function_output + "\n\n")
+            string += ("decrypt function with\nstring: " + self.q_param1_list[self.current_option] + "\ndecryption key: " + self.q_param2_list[self.current_option] + "\n\nresults with :\n\n" + function_output + "\n\n")
         elif self.current_option == 2:
             function_output = list(islice(merge(self.merge_param1, [2, 3, 7, 10, 11]), 9))
-            string += ("merge function with\n iterable1 is: " + str(self.merge_param1_name) + "\niterable2 is: " + str(self.merge_param1_name) + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
+            string += ("merge function with\n iterable1 is: " + self.q_param1_list[self.current_option] + "\niterable2 is: " + self.q_param2_list[self.current_option] + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
         elif self.current_option == 3:
             function_output = list(islice(rank(self.rank_param1, self.rank_param2), 3))
-            string += ("rank function with\n filename: " + str(self.rank_param1) + "\nby: " + str(self.rank_param2) + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
+            string += ("rank function with\n filename: " + self.q_param1_list[self.current_option] + "\nby: " + self.q_param2_list[self.current_option] + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
         self.function_output_label.config(text=string)
 
     def edit_param(self):
-        self.q_param1_list[self.current_option] = self.entry1.get()
-        self.q_param2_list[self.current_option] = self.entry2.get()
+
+        pass
 
 
 if __name__ == "__main__":
