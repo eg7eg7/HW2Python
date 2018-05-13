@@ -1,8 +1,6 @@
 from tkinter import *
 from itertools import *
 
-
-
 file_path = 'winners_test.txt'
 
 ''' function returns upper half of matrix if k=1. 
@@ -40,7 +38,6 @@ def merge(iterable1, iterable2):
     for x in res:
         yield x
     return
-    # raise StopIteration
 
 
 def rank(file_name=file_path, how_to_rank='total'):
@@ -84,9 +81,32 @@ def divisable_by(n, limit):
         k += n
 
 
+def matrix_to_str(matrix, param=1):
+    s = ""
+    for index, sub_lst in enumerate(matrix):
+        if param == 0:
+            s += ("".rjust(10))*index
+        for value in sub_lst:
+            s += str(value).ljust(10)
+        s += "\n"
+    return s
+
+
+# string of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]
+def str_to_matrix(matrix_as_string):
+    matrix = []
+    splt = matrix_as_string.splitlines()
+    for items in splt:
+        sublist = []
+        for values in items.split():
+            sublist.append(values)
+        matrix.append(sublist)
+    return matrix
+
+
 class UserInterface:
     text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k,\n matrix is manipulated according to parameter as shown in the example."
-    text_q2 = "Q2 : decrypt function receives a text and a decryption key. returns the text after decryption"
+    text_q2 = "Q2 : decrypt function receives a text and a decryption key.\n returns the text after decryption"
     text_q3 = "Q3 : the generator function merge receives two iterable lists,\n calling the function each time returns values from both iterables in an ascending order"
     text_q4 = "Q4 : generator function rank function reads from a text file information\n of countries and their winnings in the olympic games.\n each call returns the name of winning countries in a descending order,\n sorted by parameter (total, weighted, gold, silver, arad)."
     text_info = "Eden Dupont {204808596}, Daniil Rolnik {334018009}"
@@ -118,8 +138,8 @@ class UserInterface:
     current_option = default_q
 
     def __init__(self):
-        dimension_x = 700
-        dimension_y = 800
+        dimension_x = 500
+        dimension_y = 650
 
         self.root = Tk()
         self.root.geometry(str(dimension_x)+"x"+str(dimension_y))
@@ -143,7 +163,6 @@ class UserInterface:
         self.q_value1_frame.grid(row=3, column=0, columnspan=2, sticky="sw")
         self.q_value2_frame.grid(row=5, column=0, columnspan=2, sticky="sw")
         self.q_exec_button = Button(self.q_frame, text="Execute", fg="red", command=self.execute_pressed)
-        # self.q_edit_button = Button(self.q_frame, text="Edit question parameters", fg="purple", command=self.edit_param)
         self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.current_option], justify=LEFT)
         self.q_info_label.grid(row=0, column=0)
 
@@ -151,17 +170,15 @@ class UserInterface:
         self.text_area2 = Text(self.q_value2_frame)
 
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
-        # self.q_edit_button.grid(row=1, column=1, sticky="w")
         self.default_val1_lbl = Label(self.q_frame, text="Value 1:")
         self.default_val2_lbl = Label(self.q_frame, text="Value 2:")
-        # TODO Clean comments
         self.default_val1_lbl.grid(row=2,column=0,sticky="sw",pady=5)
         self.default_val2_lbl.grid(row=4, column=0, sticky="sw",pady=5)
 
         self.text_area1.grid(row=3, column=0)
         self.text_area2.grid(row=5, column=0)
-        self.refresh_frame() #for first text area values insert
-
+        self.refresh_frame()
+        # for first text area values insert
 
         self.function_output = Frame(self.root)
         self.function_output.grid(row=3, column=0, sticky="sw")
@@ -173,54 +190,31 @@ class UserInterface:
         self.info_label = Label(self.info_frame, text=self.text_info, justify=LEFT)
         self.info_label.grid(row=0, column=0)
 
-
         self.root.mainloop()
 
-    #string of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]
-    def str_to_matrix(self, str):
-        matrix = []
-        splt = str.splitlines()
-        for items in splt:
-            sublist = []
-            for values in items.split():
-                sublist.append(values)
-            matrix.append(sublist)
-        return matrix
-
-    def matrix_to_str(self, matrix, param=1):
-        s = ""
-        for index, sub_lst in enumerate(matrix):
-            if param == 0:
-                s += ("".rjust(10))*index
-            for value in sub_lst:
-                s += str(value).ljust(10)
-            s += "\n"
-        return s
-
     def refresh_frame(self, choice=q_list[0]):
-        self.q_edit_pressed = False
         self.current_option = self.q_list.index(choice)
         self.q_info_label.config(text=self.q_info_list[self.current_option])
 
-        #empty text area before inserting default values
-        self.text_area1.delete('1.0',END)
-        self.text_area2.delete('1.0',END)
+        # empty text area before inserting default values
+        self.text_area1.delete('1.0', END)
+        self.text_area2.delete('1.0', END)
 
-        #insert default values to text areas
-        if self.current_option == 0: param1 = self.matrix_to_str(self.q_param1_list[self.current_option])
-        else: param1 = self.q_param1_list[self.current_option]
+        # insert default values to text areas
+        if self.current_option == 0:
+            param1 = matrix_to_str(self.q_param1_list[self.current_option])
+        else:
+            param1 = self.q_param1_list[self.current_option]
         param2 = self.q_param2_list[self.current_option]
         self.text_area1.insert('1.0', param1)
         self.text_area2.insert('1.0', param2)
 
-
     def execute_pressed(self):
-        # TODO make matrix look more like a matrix
         param1 = self.text_area1.get('1.0', END)
         param2 = self.text_area2.get('1.0', END)
 
         if self.current_option == 0:
-            param1 = self.str_to_matrix(param1)
+            param1 = str_to_matrix(param1)
 
         if 0 <= self.current_option <= 2:
             param2 = int(param2)
@@ -232,7 +226,7 @@ class UserInterface:
         func = self.list_of_funcs[self.current_option]
 
         if self.current_option == 0:
-            function_output = self.matrix_to_str(func(param1, param2), param2)
+            function_output = matrix_to_str(func(param1, param2), param2)
 
         elif self.current_option == 1:
             function_output = str(func(param1, param2))
@@ -241,26 +235,8 @@ class UserInterface:
             function_output = str(list(islice(func(param1, param2), 0, None)))
 
         string = "Result:\n"+function_output
-
-        # if self.current_option == 0:
-        #     function_output = half(self.half_param1, self.half_param2)
-        #     string += ("half function with\nmatrix:" + param1 + "\nk: " + param2 + "\nresults with :\n\n" + str(function_output) + "\n\n")
-        # elif self.current_option == 1:
-        #     function_output = decrypt(self.decrypt_param1, self.decrypt_param2)
-        #     string += ("decrypt function with\nstring: " + param1 + "\ndecryption key: " + param2 + "\n\nresults with :\n\n" + function_output + "\n\n")
-        # elif self.current_option == 2:
-        #     function_output = list(islice(merge(self.merge_param1, [2, 3, 7, 10, 11]), 9))
-        #     string += ("merge function with\n iterable1 is: " + param1 + "\niterable2 is: " + param2  + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
-        # elif self.current_option == 3:
-        #     function_output = list(islice(rank(self.rank_param1, self.rank_param2), 3))
-        #     string += ("rank function with\n filename: " + param1 + "\nby: " + param2 + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
         self.function_output_label.config(text=string)
 
-    # def edit_param(self):
-    #     self.q_edit_pressed = True
-    #
-    #     self.q_param1_user = self.text_area1.get('1.0','end')
-    #     self.q_param2_user = self.text_area2.get('1.0','end')
 
 if __name__ == "__main__":
     UserInterface()
