@@ -139,13 +139,13 @@ class UserInterface:
 
     def __init__(self):
         dimension_x = 500
-        dimension_y = 650
+        dimension_y = 400
 
         self.root = Tk()
         self.root.geometry(str(dimension_x)+"x"+str(dimension_y))
         self.root.title(self.window_title)
         self.questions_frame = Frame(self.root)
-        self.questions_frame.grid(row=0, column=0, sticky="sw")
+        self.questions_frame.grid(row=0, column=0, sticky="nw")
         self.user_choice = StringVar(self.questions_frame)
         self.user_choice.set(self.q_list[self.current_option])
         self.option_menu = OptionMenu(self.questions_frame, self.user_choice, *self.q_list, command=self.refresh_frame)
@@ -154,8 +154,8 @@ class UserInterface:
         self.option_menu.grid(row=0, column=1)
 
         self.q_frame = Frame(self.root)
-        self.q_value1_frame = Frame(self.q_frame, width=dimension_x, height=dimension_y/4)
-        self.q_value2_frame = Frame(self.q_frame, width=dimension_x, height=dimension_y/4)
+        self.q_value1_frame = Frame(self.q_frame, width=dimension_x, height=dimension_y/8)
+        self.q_value2_frame = Frame(self.q_frame, width=dimension_x, height=dimension_y/8)
         self.q_value1_frame.grid_propagate(False)
         self.q_value2_frame.grid_propagate(False)
 
@@ -172,8 +172,8 @@ class UserInterface:
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
         self.default_val1_lbl = Label(self.q_frame, text="Value 1:")
         self.default_val2_lbl = Label(self.q_frame, text="Value 2:")
-        self.default_val1_lbl.grid(row=2,column=0,sticky="sw",pady=5)
-        self.default_val2_lbl.grid(row=4, column=0, sticky="sw",pady=5)
+        self.default_val1_lbl.grid(row=2,column=0,sticky="sw", pady=5)
+        self.default_val2_lbl.grid(row=4, column=0, sticky="sw", pady=5)
 
         self.text_area1.grid(row=3, column=0)
         self.text_area2.grid(row=5, column=0)
