@@ -2,6 +2,7 @@ from tkinter import *
 from itertools import *
 
 
+
 file_path = 'winners_test.txt'
 
 ''' function returns upper half of matrix if k=1. 
@@ -98,7 +99,8 @@ class UserInterface:
     q_list = [option1, option2, option3, option4]
 
     half_param1 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, "spam"], [11, 12, 13, 14, 15], [16, "stam", 18, 19, 20]]
-    half_param2 = 1
+    half_param1_to_insert = "1 2 3 4 5\n6 7 8 9 'spam'\n11 12 13 14 15\n16 'stam' 18 19 20"
+    half_param2 = 0
     decrypt_param1 = "vrorqjdqgwkdqnviruwkhilvk"
     decrypt_param2 = 3
     merge_param1 = divisable_by(4, 21)
@@ -123,6 +125,7 @@ class UserInterface:
     list_of_funcs = [half, decrypt, merge, rank]
     q_param1_user_list = []
     q_param1_user_list = []
+    q_edit_pressed = False
     q_param1_user = ""
     q_param2_user = ""
     default_q = 0
@@ -188,28 +191,67 @@ class UserInterface:
         self.root.mainloop()
 
     def refresh_frame(self, choice=q_list[0]):
+        self.q_edit_pressed = False
         self.current_option = self.q_list.index(choice)
         self.q_info_label.config(text=self.q_info_list[self.current_option])
 
         #empty text area before inserting default values
-        self.text_area1.delete('1.0','2.0')
-        self.text_area2.delete('1.0','2.0')
+        self.text_area1.delete('1.0',END)
+        self.text_area2.delete('1.0',END)
 
         #insert default values to text areas
-        self.text_area1.insert('1.0', self.q_param1_list[self.current_option])
-        self.text_area2.insert('1.0', self.q_param2_list[self.current_option])
+        if self.current_option == 0: param1 = self.half_param1_to_insert
+        else: param1 = self.q_param1_list[self.current_option]
+        param2 = self.q_param2_list[self.current_option]
+        self.text_area1.insert('1.0', param1)
+        self.text_area2.insert('1.0', param2)
 
+    #string of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]
+    def str_to_matrix(self, str):
+        matrix = []
+        str_splt = str.splitlines()
+        for items in str_splt.split([]):
+            sublist = []
+            for values in items:
+                sublist.append(values)
+            matrix.append(sublist)
+        return matrix
 
+    def matrix_to_str(self, matrix, param=1):
+        s = ""
+        if param == 1:
+            for sub_lst in matrix:
+                for value in sub_lst:
+                    s += str(value).ljust(10)
+                s += "\n"
+
+        elif param == 0:
+            for index, sub_lst in enumerate(matrix):
+                s += ("".rjust(10))*index
+                for value in sub_lst:
+                    s += str(value).ljust(10)
+                s += "\n"
+
+        return s
 
     def execute_pressed(self):
         # TODO make matrix look more like a matrix
-        param1 = self.q_param1_list[self.current_option]
-        param2 = self.q_param2_list[self.current_option]
-        tmp_lst = []
+        if self.q_edit_pressed == False:
+            param1 = self.q_param1_list[self.current_option]
+            param2 = self.q_param2_list[self.current_option]
+
+        else:
+            if self.current_option == 0:
+                pass
+            self.q_param1_user
+            self.q_param2_user
 
         func = self.list_of_funcs[self.current_option]
 
-        if self.current_option == 0 or self.current_option == 1:
+        if self.current_option == 0:
+            function_output = self.matrix_to_str(func(param1, param2), param2)
+
+        elif self.current_option == 1:
             function_output = str(func(param1, param2))
 
         elif self.current_option == 2 or self.current_option == 3:
@@ -232,9 +274,12 @@ class UserInterface:
         self.function_output_label.config(text=string)
 
     def edit_param(self):
+        self.q_edit_pressed = True
 
         self.q_param1_user = self.text_area1.get('1.0','end')
         self.q_param2_user = self.text_area2.get('1.0','end')
+
+
 
 
 
