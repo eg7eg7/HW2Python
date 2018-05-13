@@ -110,24 +110,10 @@ class UserInterface:
     rank_param1 = 'winners_test.txt'
     rank_param2 = "total"
 
-    half_param1_user = [[]]
-    half_param2_user = 1
-    decrypt_param1_user = "stam"
-    decrypt_param2_user = 3
-    merge_param1_user = ""
-    merge_param2_user = ""
-    rank_param1_user = 'winners_test.txt'
-    rank_param2_user = "total"
-
     q_info_list = [text_q1, text_q2, text_q3, text_q4]
     q_param1_list = [half_param1, decrypt_param1, merge_param1, rank_param1]
     q_param2_list = [half_param2, decrypt_param2, merge_param2, rank_param2]
     list_of_funcs = [half, decrypt, merge, rank]
-    q_param1_user_list = []
-    q_param1_user_list = []
-    q_edit_pressed = False
-    q_param1_user = ""
-    q_param2_user = ""
     default_q = 0
     current_option = default_q
 
@@ -157,7 +143,7 @@ class UserInterface:
         self.q_value1_frame.grid(row=3, column=0, columnspan=2, sticky="sw")
         self.q_value2_frame.grid(row=5, column=0, columnspan=2, sticky="sw")
         self.q_exec_button = Button(self.q_frame, text="Execute", fg="red", command=self.execute_pressed)
-        self.q_edit_button = Button(self.q_frame, text="Edit question parameters", fg="purple", command=self.edit_param)
+        # self.q_edit_button = Button(self.q_frame, text="Edit question parameters", fg="purple", command=self.edit_param)
         self.q_info_label = Label(self.q_frame, text=self.q_info_list[self.current_option], justify=LEFT)
         self.q_info_label.grid(row=0, column=0)
 
@@ -165,7 +151,7 @@ class UserInterface:
         self.text_area2 = Text(self.q_value2_frame)
 
         self.q_exec_button.grid(row=1, column=0, sticky="sw")
-        self.q_edit_button.grid(row=1, column=1, sticky="w")
+        # self.q_edit_button.grid(row=1, column=1, sticky="w")
         self.default_val1_lbl = Label(self.q_frame, text="Value 1:")
         self.default_val2_lbl = Label(self.q_frame, text="Value 2:")
         # TODO Clean comments
@@ -190,6 +176,27 @@ class UserInterface:
 
         self.root.mainloop()
 
+    #string of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]
+    def str_to_matrix(self, str):
+        matrix = []
+        splt = str.splitlines()
+        for items in splt:
+            sublist = []
+            for values in items.split():
+                sublist.append(values)
+            matrix.append(sublist)
+        return matrix
+
+    def matrix_to_str(self, matrix, param=1):
+        s = ""
+        for index, sub_lst in enumerate(matrix):
+            if param == 0:
+                s += ("".rjust(10))*index
+            for value in sub_lst:
+                s += str(value).ljust(10)
+            s += "\n"
+        return s
+
     def refresh_frame(self, choice=q_list[0]):
         self.q_edit_pressed = False
         self.current_option = self.q_list.index(choice)
@@ -200,51 +207,27 @@ class UserInterface:
         self.text_area2.delete('1.0',END)
 
         #insert default values to text areas
-        if self.current_option == 0: param1 = self.half_param1_to_insert
+        if self.current_option == 0: param1 = self.matrix_to_str(self.q_param1_list[self.current_option])
         else: param1 = self.q_param1_list[self.current_option]
         param2 = self.q_param2_list[self.current_option]
         self.text_area1.insert('1.0', param1)
         self.text_area2.insert('1.0', param2)
 
-    #string of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]
-    def str_to_matrix(self, str):
-        matrix = []
-        str_splt = str.splitlines()
-        for items in str_splt.split([]):
-            sublist = []
-            for values in items:
-                sublist.append(values)
-            matrix.append(sublist)
-        return matrix
-
-    def matrix_to_str(self, matrix, param=1):
-        s = ""
-        if param == 1:
-            for sub_lst in matrix:
-                for value in sub_lst:
-                    s += str(value).ljust(10)
-                s += "\n"
-
-        elif param == 0:
-            for index, sub_lst in enumerate(matrix):
-                s += ("".rjust(10))*index
-                for value in sub_lst:
-                    s += str(value).ljust(10)
-                s += "\n"
-
-        return s
 
     def execute_pressed(self):
         # TODO make matrix look more like a matrix
-        if self.q_edit_pressed == False:
-            param1 = self.q_param1_list[self.current_option]
-            param2 = self.q_param2_list[self.current_option]
+        param1 = self.text_area1.get('1.0', END)
+        param2 = self.text_area2.get('1.0', END)
 
-        else:
-            if self.current_option == 0:
-                pass
-            self.q_param1_user
-            self.q_param2_user
+        if self.current_option == 0:
+            param1 = self.str_to_matrix(param1)
+
+        if 0 <= self.current_option <= 2:
+            param2 = int(param2)
+
+        if self.current_option == 3:
+            param1 = param1.splitlines()[0]
+            param2 = param2.splitlines()[0]
 
         func = self.list_of_funcs[self.current_option]
 
@@ -273,15 +256,11 @@ class UserInterface:
         #     string += ("rank function with\n filename: " + param1 + "\nby: " + param2 + "\n\nresults with :\n\n" + str(function_output) + "\n\n")
         self.function_output_label.config(text=string)
 
-    def edit_param(self):
-        self.q_edit_pressed = True
-
-        self.q_param1_user = self.text_area1.get('1.0','end')
-        self.q_param2_user = self.text_area2.get('1.0','end')
-
-
-
-
+    # def edit_param(self):
+    #     self.q_edit_pressed = True
+    #
+    #     self.q_param1_user = self.text_area1.get('1.0','end')
+    #     self.q_param2_user = self.text_area2.get('1.0','end')
 
 if __name__ == "__main__":
     UserInterface()
