@@ -198,7 +198,6 @@ class UserInterface:
         return s
 
     def refresh_frame(self, choice=q_list[0]):
-        self.q_edit_pressed = False
         self.current_option = self.q_list.index(choice)
         self.q_info_label.config(text=self.q_info_list[self.current_option])
 
