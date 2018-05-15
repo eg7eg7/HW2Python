@@ -1,0 +1,303 @@
+2018-05-15 13:17:05,702:__main__:Matrix_to_str: 
+matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-15 13:17:05,702:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-15 13:18:03,173:__main__:Matrix_to_str: 
+matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-15 13:18:03,173:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-15 13:18:43,398:__main__:Matrix_to_str: 
+matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1 
+2018-05-15 13:18:43,398:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+ 
+2018-05-15 13:19:09,875:__main__:Matrix_to_str:nmatrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-15 13:19:09,875:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-15 13:19:40,323:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-15 13:19:40,323:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-15 13:19:51,802:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-15 13:19:51,803:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-15 13:19:55,012:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 3
+2018-05-15 13:19:55,012:__main__:Decrypt result: solongandthanksforthefish
+
+2018-05-15 13:20:07,043:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 4
+2018-05-15 13:20:07,043:__main__:Decrypt result: rnknmfzmcsgzmjrenqsgdehrg
+
+2018-05-15 13:20:20,927:__main__:Decrypt: string = gfadfg
+, key = 4
+2018-05-15 13:20:20,927:__main__:Decrypt result: cbwzbc
+
+2018-05-15 13:20:27,301:__main__:Decrypt: string = gfadfg
+, key = 0
+2018-05-15 13:20:27,301:__main__:Decrypt result: gfadfg
+
+2018-05-15 13:26:36,607:__main__:Gui started
+2018-05-15 13:26:36,716:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-15 13:26:36,717:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-15 13:26:36,717:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-15 13:26:36,725:__main__:Gui refresh_frame finished
+2018-05-15 13:26:36,725:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-15 13:26:36,725:__main__:text_area2 data = 0
+
+2018-05-15 13:26:38,927:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:26:38,928:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-15 13:26:38,928:__main__:text_area2 data = 0
+
+2018-05-15 13:26:38,928:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-15 13:26:38,928:__main__:Str_to_matrix result: str(matrix) 
+2018-05-15 13:26:38,928:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-15 13:26:38,928:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-15 13:26:38,928:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-15 13:26:38,928:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-15 13:26:38,929:__main__:Execute_pressed result: 0
+
+2018-05-15 13:26:42,328:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:26:42,328:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-15 13:26:42,328:__main__:text_area2 data = 1
+
+2018-05-15 13:26:42,329:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-15 13:26:42,329:__main__:Str_to_matrix result: str(matrix) 
+2018-05-15 13:26:42,329:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 1 
+2018-05-15 13:26:42,329:__main__:Half result: [['1'], ['6', '7'], ['11', '12', '13'], ['16', 'stam', '18', '19'], []]
+2018-05-15 13:26:42,329:__main__:Matrix_to_str: matrix = [['1'], ['6', '7'], ['11', '12', '13'], ['16', 'stam', '18', '19'], []], param = 1
+2018-05-15 13:26:42,329:__main__:Matrix_to_str result: 
+1         
+6         7         
+11        12        13        
+16        stam      18        19        
+
+
+2018-05-15 13:26:42,330:__main__:Execute_pressed result: 1
+
+2018-05-15 13:26:45,880:__main__:Gui refresh_frame: choice = Question 2 - decrypt
+2018-05-15 13:26:45,880:__main__:Gui refresh_frame finished
+2018-05-15 13:26:45,881:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-15 13:26:45,881:__main__:text_area2 data = 3
+
+2018-05-15 13:26:46,868:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:26:46,869:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-15 13:26:46,869:__main__:text_area2 data = 3
+
+2018-05-15 13:26:46,869:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 3
+2018-05-15 13:26:46,869:__main__:Decrypt result: solongandthanksforthefish
+
+2018-05-15 13:26:46,869:__main__:Execute_pressed result: 3
+
+2018-05-15 13:26:50,698:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:26:50,698:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-15 13:26:50,698:__main__:text_area2 data = 5
+
+2018-05-15 13:26:50,698:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 5
+2018-05-15 13:26:50,698:__main__:Decrypt result: qmjmleylbrfyliqdmprfcdgqf
+
+2018-05-15 13:26:50,698:__main__:Execute_pressed result: 5
+
+2018-05-15 13:27:01,084:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:27:01,084:__main__:text_area1 data = Daniel Rolnik
+
+2018-05-15 13:27:01,084:__main__:text_area2 data = 5
+
+2018-05-15 13:27:01,084:__main__:Decrypt: string = Daniel Rolnik
+, key = 5
+2018-05-15 13:27:01,085:__main__:Decrypt result: Dvidzg Rjgidf
+
+2018-05-15 13:27:01,085:__main__:Execute_pressed result: 5
+
+2018-05-15 13:27:14,769:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:27:14,769:__main__:text_area1 data = daniel rolnik
+
+2018-05-15 13:27:14,769:__main__:text_area2 data = 5
+
+2018-05-15 13:27:14,770:__main__:Decrypt: string = daniel rolnik
+, key = 5
+2018-05-15 13:27:14,770:__main__:Decrypt result: yvidzg mjgidf
+
+2018-05-15 13:27:14,770:__main__:Execute_pressed result: 5
+
+2018-05-15 13:27:33,872:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:27:33,872:__main__:text_area1 data = daniel rolnik
+
+2018-05-15 13:27:33,872:__main__:text_area2 data = 5
+
+2018-05-15 13:27:33,872:__main__:Decrypt: string = daniel rolnik
+, key = 5
+2018-05-15 13:27:33,872:__main__:Decrypt result: yvidzg mjgidf
+
+2018-05-15 13:27:33,873:__main__:Execute_pressed result: 5
+
+2018-05-15 13:27:37,007:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-15 13:27:37,008:__main__:Gui refresh_frame finished
+2018-05-15 13:27:37,008:__main__:text_area1 data = winners_test.txt
+
+2018-05-15 13:27:37,008:__main__:text_area2 data = total
+
+2018-05-15 13:27:40,020:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:27:40,020:__main__:text_area1 data = winners_test.txt
+
+2018-05-15 13:27:40,020:__main__:text_area2 data = total
+
+2018-05-15 13:27:40,020:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+2018-05-15 13:27:40,021:__main__:Rank yield: USA:2521
+2018-05-15 13:27:40,021:__main__:Rank yield: Great-Britain:847
+2018-05-15 13:27:40,021:__main__:Rank yield: Israel:9
+2018-05-15 13:27:40,021:__main__:Rank: yield finished
+2018-05-15 13:27:40,022:__main__:Execute_pressed result: total
+
+2018-05-15 13:27:42,985:__main__:Execute_pressed (execution button pressed)
+2018-05-15 13:27:42,985:__main__:text_area1 data = winners_test.txt
+
+2018-05-15 13:27:42,985:__main__:text_area2 data = gold
+
+2018-05-15 13:27:42,986:__main__:Rank: file_name = winners_test.txt, hot_to_rank=gold
+2018-05-15 13:27:42,986:__main__:Rank yield: USA:1022
+2018-05-15 13:27:42,986:__main__:Rank yield: Great-Britain:263
+2018-05-15 13:27:42,986:__main__:Rank yield: Israel:1
+2018-05-15 13:27:42,986:__main__:Rank: yield finished
+2018-05-15 13:27:42,986:__main__:Execute_pressed result: gold
+
+2018-05-15 13:29:08,084:__main__:Gui started
+
+2018-05-15 13:29:08,188:__main__:Gui refresh_frame: choice = Question 1 - half
+
+2018-05-15 13:29:08,189:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+
+2018-05-15 13:29:08,189:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-15 13:29:08,194:__main__:Gui refresh_frame finished
+
+2018-05-15 13:29:08,194:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+
+2018-05-15 13:29:08,194:__main__:text_area2 data = 0
+
+
+2018-05-15 13:29:13,711:__main__:Gui refresh_frame: choice = Question 4 - rank
+
+2018-05-15 13:29:13,713:__main__:Gui refresh_frame finished
+
+2018-05-15 13:29:13,713:__main__:text_area1 data = winners_test.txt
+
+
+2018-05-15 13:29:13,713:__main__:text_area2 data = total
+
+
+2018-05-15 13:29:14,504:__main__:Execute_pressed (execution button pressed)
+
+2018-05-15 13:29:14,504:__main__:text_area1 data = winners_test.txt
+
+
+2018-05-15 13:29:14,504:__main__:text_area2 data = total
+
+
+2018-05-15 13:29:14,505:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+
+2018-05-15 13:29:14,505:__main__:Rank yield: USA:2521
+
+2018-05-15 13:29:14,505:__main__:Rank yield: Great-Britain:847
+
+2018-05-15 13:29:14,505:__main__:Rank yield: Israel:9
+
+2018-05-15 13:29:14,505:__main__:Rank: yield finished
+
+2018-05-15 13:29:14,506:__main__:Execute_pressed result: total
+
+
+2018-05-15 13:29:17,538:__main__:Execute_pressed (execution button pressed)
+
+2018-05-15 13:29:17,539:__main__:text_area1 data = winners_test.txt
+
+
+2018-05-15 13:29:17,539:__main__:text_area2 data = total
+
+
+2018-05-15 13:29:17,539:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+
+2018-05-15 13:29:17,539:__main__:Rank yield: USA:2521
+
+2018-05-15 13:29:17,539:__main__:Rank yield: Great-Britain:847
+
+2018-05-15 13:29:17,539:__main__:Rank yield: Israel:9
+
+2018-05-15 13:29:17,539:__main__:Rank: yield finished
+
+2018-05-15 13:29:17,540:__main__:Execute_pressed result: total
+
+

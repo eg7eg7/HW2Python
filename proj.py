@@ -1,23 +1,48 @@
 from tkinter import *
 from itertools import *
 
+import logging
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
+
+file_handler = logging.FileHandler('Python_HW1Python_Logs.txt')
+# file_handler.setLevel(logging.ERROR)
+file_handler.setFormatter(formatter)
+
+stream_handler = logging.StreamHandler()
+stream_handler.setFormatter(formatter)
+
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
+
 file_path = 'winners_test.txt'
+
+
+'''Logs will be written in this file, if previous version exists it will be erased'''
+
+
 
 ''' function returns upper half of matrix if k=1. 
 If k=0 function returns lower half of matrix. If k!=0 and k!=1 empty list will be returned'''
 
-
 def half(matrix, k=1):
-    return [
+    logger.debug(f"Half: matrix = {str(matrix)}, k = {k} ")
+    result = [
             row_list[row_index:len(row_list)] if k is 0
             else row_list[0:row_index + 1] if k is 1
             else []
             for row_index, row_list in enumerate(matrix)
     ]
+    logger.debug(f"Half result: {str(result)}")
+    return result
 
 
 # function decrypts only parts of the string that includes small letters of the english alphabet
 def decrypt(string, key=3):
+    logger.debug(f"Decrypt: string = {string}, key = {key}")
     new_string = ''
     size_alphabet = 26
     for ch in string:
@@ -25,10 +50,12 @@ def decrypt(string, key=3):
         if ord('a') <= ord(ch) <= ord('z'):
             new_ch = chr(ord('a') + (((ord(ch) - (key % size_alphabet)) - ord('a')) % size_alphabet))
         new_string += new_ch
+    logger.debug(f"Decrypt result: {new_string}")
     return new_string
 
 
 def merge(iterable1, iterable2):
+    logger.debug(f"Merge: iterable1 = {str(iterable1)}, iterable2 = {str(iterable2)}")
     res = []
     for x in iterable1:
         res.append(x)
@@ -36,11 +63,14 @@ def merge(iterable1, iterable2):
         res.append(x)
     res = sorted(list(set(res)))
     for x in res:
+        logger.degug(f"Merge yield: {x}")
         yield x
+    logger.debug(f"Merge: yield finished")
     return
 
 
 def rank(file_name=file_path, how_to_rank='total'):
+    logger.debug(f"Rank: file_name = {file_name}, hot_to_rank={how_to_rank}")
     f = open(file_name)
     (countries, gold, silver, bronze, results_by_rank_type, index_to_yield, res_to_yield) = ([], [], [],[], [],  0, " ")
     (gold_weight, silver_weight, bronze_weight) = (3, 2, 1)
@@ -66,22 +96,27 @@ def rank(file_name=file_path, how_to_rank='total'):
             if results_by_rank_type[index] > max_res:
                 max_res = results_by_rank_type[index]
                 index_to_yield = index
-        res_to_yield = "\"{0}\":{1}".format(countries[index_to_yield], max_res)
+        res_to_yield = f"{countries[index_to_yield]}:{max_res}"
         del(results_by_rank_type[index_to_yield])
         del(countries[index_to_yield])
+        logger.debug(f"Rank yield: {res_to_yield}")
         yield res_to_yield
+    logger.debug(f"Rank: yield finished")
     return
 
 
 # procedure given in example
 def divisable_by(n, limit):
+    logger.debug(f"Divisable_by: n = {n}, limit = {limit}")
     k = 0
     while k < limit:
         yield k
         k += n
+    return
 
 
 def matrix_to_str(matrix, param=1):
+    logger.debug(f"Matrix_to_str: matrix = {str(matrix)}, param = {param}")
     s = ""
     for index, sub_lst in enumerate(matrix):
         if param == 0:
@@ -89,11 +124,13 @@ def matrix_to_str(matrix, param=1):
         for value in sub_lst:
             s += str(value).ljust(10)
         s += "\n"
+    logger.debug(f"Matrix_to_str result: \n{s}")
     return s
 
 
 # string of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]
 def str_to_matrix(matrix_as_string):
+    logger.debug(f"Str_to_matrix: matrix_as_string = {matrix_as_string}")
     matrix = []
     splt = matrix_as_string.splitlines()
     for items in splt:
@@ -101,6 +138,7 @@ def str_to_matrix(matrix_as_string):
         for values in items.split():
             sublist.append(values)
         matrix.append(sublist)
+    logger.debug((f"Str_to_matrix result: str(matrix) "))
     return matrix
 
 
@@ -138,6 +176,7 @@ class UserInterface:
     current_option = default_q
 
     def __init__(self):
+        logger.info("Gui started")
         dimension_x = 500
         dimension_y = 400
 
@@ -193,6 +232,7 @@ class UserInterface:
         self.root.mainloop()
 
     def refresh_frame(self, choice=q_list[0]):
+        logger.debug(f"Gui refresh_frame: choice = {choice}")
         self.current_option = self.q_list.index(choice)
         self.q_info_label.config(text=self.q_info_list[self.current_option])
 
@@ -208,15 +248,21 @@ class UserInterface:
         param2 = self.q_param2_list[self.current_option]
         self.text_area1.insert('1.0', param1)
         self.text_area2.insert('1.0', param2)
+        logger.info("Gui refresh_frame finished")
+        logger.debug(f"text_area1 data = {self.text_area1.get('1.0', END)}")
+        logger.debug(f"text_area2 data = {self.text_area2.get('1.0', END)}")
 
     def execute_pressed(self):
+        logger.info("Execute_pressed (execution button pressed)")
+        logger.debug(f"text_area1 data = {self.text_area1.get('1.0', END)}")
+        logger.debug(f"text_area2 data = {self.text_area2.get('1.0', END)}")
         param1 = self.text_area1.get('1.0', END)
         param2 = self.text_area2.get('1.0', END)
 
         if self.current_option == 0:
             param1 = str_to_matrix(param1)
 
-        if 0 <= self.current_option <= 2:
+        if  self.current_option is 0 or self.current_option is 1:
             param2 = int(param2)
 
         if self.current_option == 3:
@@ -236,7 +282,10 @@ class UserInterface:
 
         string = "Result:\n"+function_output
         self.function_output_label.config(text=string)
+        logger.debug(f"Execute_pressed result: {self.text_area2.get('1.0', END)}")
 
 
 if __name__ == "__main__":
     UserInterface()
+    #TODO add exceptions and logger.error
+    #TODO solve question 3 gui problem
