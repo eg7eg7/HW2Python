@@ -8,7 +8,7 @@ logger.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
 
-file_handler = logging.FileHandler('Python_HW1Python_Logs.txt')
+file_handler = logging.FileHandler('Python_HW2Python_Logs.txt')
 # file_handler.setLevel(logging.ERROR)
 file_handler.setFormatter(formatter)
 
@@ -176,7 +176,7 @@ class UserInterface:
     current_option = default_q
 
     def __init__(self):
-        logger.info("Gui started")
+        logger.debug("Gui started")
         dimension_x = 500
         dimension_y = 400
 

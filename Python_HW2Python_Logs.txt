@@ -1,0 +1,18 @@
+2018-05-16 13:27:45,101:__main__:Gui started
+2018-05-16 13:27:45,709:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-16 13:27:45,709:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-16 13:27:45,710:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-16 13:27:45,721:__main__:Gui refresh_frame finished
+2018-05-16 13:27:45,721:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-16 13:27:45,721:__main__:text_area2 data = 0
+
