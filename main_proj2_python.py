@@ -1,14 +1,18 @@
+# Students:
+# 1) Full Name: Eden Dupont. ID: 204808596
+# 2) Full Name: Daniil Rolnik. ID: 334018009
+
 from tkinter import *
 from itertools import *
 import logging
 
+'''Logs will be written in file, if previous version exists it will be erased'''
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
-
-file_handler = logging.FileHandler('Python_HW2Python_Logs.txt')
-# file_handler.setLevel(logging.ERROR)
+logger_file_name = 'Python_HW2Python_Logs.txt'
+file_handler = logging.FileHandler(logger_file_name, mode='w')
 file_handler.setFormatter(formatter)
 
 stream_handler = logging.StreamHandler()
@@ -20,20 +24,23 @@ logger.addHandler(stream_handler)
 file_path = 'winners_test.txt'
 
 
-'''Logs will be written in this file, if previous version exists it will be erased'''
 
 ''' function returns upper half of matrix if k=1. 
 If k=0 function returns lower half of matrix. If k!=0 and k!=1 empty list will be returned'''
-
-
 def half(matrix, k=1):
     logger.debug(f"Half: matrix = {str(matrix)}, k = {k} ")
-    result = [row_list[row_index:len(row_list)] if k is 0 else row_list[0:row_index + 1] if k is 1 else [] for row_index, row_list in enumerate(matrix)]
+
+    result = [
+        row_list[row_index:len(row_list)] if k is 0
+        else row_list[0:row_index + 1] if k is 1
+        else []
+        for row_index, row_list in enumerate(matrix)
+    ]
+
     logger.debug(f"Half result: {str(result)}")
     return result
 
-
-# function decrypts only parts of the string that includes small letters of the english alphabet
+'''Function decrypts only parts of the string that includes small letters of the english alphabet'''
 def decrypt(string, key=3):
     logger.debug(f"Decrypt: string = {string}, key = {key}")
     new_string = ''
@@ -46,7 +53,7 @@ def decrypt(string, key=3):
     logger.debug(f"Decrypt result: {new_string}")
     return new_string
 
-
+'''Generator function takes two iterables aand returns next value from merged and sorted list'''
 def merge(iterable1, iterable2):
     logger.debug(f"Merge: iterable1 = {str(iterable1)}, iterable2 = {str(iterable2)}")
     res = []
@@ -62,7 +69,9 @@ def merge(iterable1, iterable2):
     logger.debug(f"Merge: yield finished")
     return
 
-
+'''Generator function gets file name of file including enumeration of countries and they results at olympic games 
+(how many medals of different type and by what parameter to rank countries. 
+Function returns next country with highest rank by defined parameter'''
 def rank(file_name=file_path, how_to_rank='total'):
     logger.debug(f"Rank: file_name = {file_name}, hot_to_rank={how_to_rank}")
     f = open(file_name)
@@ -99,7 +108,7 @@ def rank(file_name=file_path, how_to_rank='total'):
     return
 
 
-# procedure given in example
+''' procedure given in example '''
 def divisable_by(n, limit):
     logger.debug(f"Divisable_by: n = {n}, limit = {limit}")
     k = 0
@@ -109,6 +118,7 @@ def divisable_by(n, limit):
     return
 
 
+'''lists in list matrix will be turned into string representation of matrix'''
 def matrix_to_str(matrix, param=1):
     logger.debug(f"Matrix_to_str: matrix = {str(matrix)}, param = {param}")
     s = ""
@@ -123,7 +133,7 @@ def matrix_to_str(matrix, param=1):
     return s
 
 
-# string of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]
+''' String of type "1 2 3 \n 4 5 'stam'" will be converted to 2d list: [[1, 2, 3], [4, 5, 'stam']]'''
 def str_to_matrix(matrix_as_string):
     logger.debug(f"Str_to_matrix: matrix_as_string = {matrix_as_string}")
     matrix = []
@@ -137,7 +147,8 @@ def str_to_matrix(matrix_as_string):
     return matrix
 
 
-# function designed to convert a string representation of a list of integers into a list, if the string contains non-integer values, returns an empty list
+''' Function designed to convert a string representation of a list of integers into a list,
+if the string contains non-integer values, returns an empty list'''
 def str_to_list(string):
     logger.debug(f"str_to_list: converting the string {string} to a list of type int")
     li = []
@@ -150,7 +161,7 @@ def str_to_list(string):
             return li
     return li
 
-
+'''All Gui definitions and run Gui'''
 class UserInterface:
     text_q1 = "Q1 (list comprehension):\n half function receives a matrix and a parameter k,\n matrix is manipulated according to parameter as shown in the example."
     text_q2 = "Q2 : decrypt function receives a text and a decryption key.\n returns the text after decryption"
@@ -225,7 +236,6 @@ class UserInterface:
         self.text_area2.grid(row=5, column=0)
 
         # for first text area values insert
-
         self.function_output = Frame(self.root)
         self.function_output.grid(row=3, column=0, sticky="sw")
         self.function_output_label = Label(self.function_output, justify=LEFT)
@@ -239,6 +249,8 @@ class UserInterface:
         self.refresh_frame()
         self.root.mainloop()
 
+
+    '''Frame refreshed every time another question chosen'''
     def refresh_frame(self, choice=None):
         if choice is None:
             choice = self.q_list[self.current_option]
@@ -266,6 +278,8 @@ class UserInterface:
         logger.debug(f"text_area1 data = {self.text_area1.get('1.0', END)}")
         logger.debug(f"text_area2 data = {self.text_area2.get('1.0', END)}")
 
+
+    '''Function called if Execute button pressed'''
     def execute_pressed(self):
         logger.info("Execute_pressed (execution button pressed)")
         logger.debug(f"text_area1 data = {self.text_area1.get('1.0', END)}")
@@ -298,4 +312,3 @@ class UserInterface:
 
 if __name__ == "__main__":
     UserInterface()
-    # TODO add exceptions and logger.error
