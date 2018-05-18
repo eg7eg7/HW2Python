@@ -113,10 +113,11 @@ def matrix_to_str(matrix, param=1):
     logger.debug(f"Matrix_to_str: matrix = {str(matrix)}, param = {param}")
     s = ""
     for index, sub_lst in enumerate(matrix):
+        space_value = 10
         if param == 0:
-            s += ("".rjust(10))*index
+            s += ("".rjust(space_value))*index
         for value in sub_lst:
-            s += str(value).ljust(10)
+            s += str(value).ljust(space_value)
         s += "\n"
     logger.debug(f"Matrix_to_str result: \n{s}")
     return s
