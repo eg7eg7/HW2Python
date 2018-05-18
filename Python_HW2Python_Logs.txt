@@ -73,3 +73,328 @@
 2018-05-18 14:02:35,180:main_proj2_python:Rank yield: Israel:-1
 2018-05-18 14:02:35,181:main_proj2_python:Rank yield: USA:-1
 2018-05-18 14:02:35,181:main_proj2_python:Rank yield: Great-Britain:-1
+2018-05-18 14:08:12,142:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 14:08:12,143:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 14:08:12,143:__main__:Gui started
+2018-05-18 14:08:12,557:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 14:08:12,557:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 14:08:12,558:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 14:08:12,566:__main__:Gui refresh_frame finished
+2018-05-18 14:08:12,566:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:12,567:__main__:text_area2 data = 0
+
+2018-05-18 14:08:14,167:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:08:14,167:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:14,167:__main__:text_area2 data = 0
+
+2018-05-18 14:08:14,167:__main__:Executing option0
+2018-05-18 14:08:14,168:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:14,168:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 14:08:14,168:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 14:08:14,168:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 14:08:14,168:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 14:08:14,168:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 14:08:14,169:__main__:Execute_pressed result: 0
+
+2018-05-18 14:08:14,713:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:08:14,713:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:14,714:__main__:text_area2 data = 0
+
+2018-05-18 14:08:14,714:__main__:Executing option0
+2018-05-18 14:08:14,714:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:14,714:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 14:08:14,714:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 14:08:14,714:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 14:08:14,714:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 14:08:14,715:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 14:08:14,715:__main__:Execute_pressed result: 0
+
+2018-05-18 14:08:19,915:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 14:08:19,918:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 14:08:19,918:__main__:Gui started
+2018-05-18 14:08:20,122:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 14:08:20,122:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 14:08:20,122:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 14:08:20,145:__main__:Gui refresh_frame finished
+2018-05-18 14:08:20,145:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:20,146:__main__:text_area2 data = 0
+
+2018-05-18 14:08:21,223:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:08:21,223:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:21,223:__main__:text_area2 data = 0
+
+2018-05-18 14:08:21,223:__main__:Executing option0
+2018-05-18 14:08:21,223:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:21,223:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 14:08:21,223:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 14:08:21,223:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 14:08:21,223:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 14:08:21,223:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 14:08:21,224:__main__:Execute_pressed result: 0
+
+2018-05-18 14:08:23,224:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-18 14:08:23,225:__main__:Gui refresh_frame finished
+2018-05-18 14:08:23,225:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 14:08:23,225:__main__:text_area2 data = total
+
+2018-05-18 14:08:23,836:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:08:23,836:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 14:08:23,836:__main__:text_area2 data = total
+
+2018-05-18 14:08:23,836:__main__:Executing option3
+2018-05-18 14:08:23,836:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+2018-05-18 14:08:23,837:__main__:Rank yield: USA:2521
+2018-05-18 14:08:23,837:__main__:Rank yield: Great-Britain:847
+2018-05-18 14:08:23,837:__main__:Rank yield: Israel:9
+2018-05-18 14:08:23,837:__main__:Rank: yield finished
+2018-05-18 14:08:23,837:__main__:Execute_pressed result: total
+
+2018-05-18 14:08:24,208:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:08:24,208:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 14:08:24,209:__main__:text_area2 data = total
+
+2018-05-18 14:08:24,209:__main__:Executing option3
+2018-05-18 14:08:24,209:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+2018-05-18 14:08:24,209:__main__:Rank yield: USA:2521
+2018-05-18 14:08:24,209:__main__:Rank yield: Great-Britain:847
+2018-05-18 14:08:24,209:__main__:Rank yield: Israel:9
+2018-05-18 14:08:24,209:__main__:Rank: yield finished
+2018-05-18 14:08:24,210:__main__:Execute_pressed result: total
+
+2018-05-18 14:08:24,545:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:08:24,545:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 14:08:24,545:__main__:text_area2 data = total
+
+2018-05-18 14:08:24,545:__main__:Executing option3
+2018-05-18 14:08:24,545:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+2018-05-18 14:08:24,545:__main__:Rank yield: USA:2521
+2018-05-18 14:08:24,545:__main__:Rank yield: Great-Britain:847
+2018-05-18 14:08:24,546:__main__:Rank yield: Israel:9
+2018-05-18 14:08:24,546:__main__:Rank: yield finished
+2018-05-18 14:08:24,546:__main__:Execute_pressed result: total
+
+2018-05-18 14:08:35,687:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 14:08:35,687:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 14:08:35,687:__main__:Gui started
+2018-05-18 14:08:35,795:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 14:08:35,795:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 14:08:35,795:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 14:08:35,799:__main__:Gui refresh_frame finished
+2018-05-18 14:08:35,799:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:08:35,799:__main__:text_area2 data = 0
+
+2018-05-18 14:08:37,577:__main__:Gui refresh_frame: choice = Question 2 - decrypt
+2018-05-18 14:08:37,578:__main__:Gui refresh_frame finished
+2018-05-18 14:08:37,578:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 14:08:37,578:__main__:text_area2 data = 3
+
+2018-05-18 14:08:38,720:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:08:38,720:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 14:08:38,720:__main__:text_area2 data = 3
+
+2018-05-18 14:08:38,720:__main__:Executing option1
+2018-05-18 14:08:38,720:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 3
+2018-05-18 14:08:38,721:__main__:Decrypt result: solongandthanksforthefish
+
+2018-05-18 14:08:38,721:__main__:Execute_pressed result: 3
+
+2018-05-18 14:10:42,156:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 14:10:42,156:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 14:10:42,156:__main__:Gui started
+2018-05-18 14:10:42,243:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 14:10:42,243:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 14:10:42,244:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 14:10:42,247:__main__:Gui refresh_frame finished
+2018-05-18 14:10:42,248:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:10:42,248:__main__:text_area2 data = 0
+
+2018-05-18 14:10:43,470:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:10:43,470:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:10:43,470:__main__:text_area2 data = 0
+
+2018-05-18 14:10:43,470:__main__:Executing option0
+2018-05-18 14:10:43,470:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:10:43,471:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 14:10:43,471:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 14:10:43,471:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 14:10:43,471:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 14:10:43,471:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 14:10:43,472:__main__:Execute_pressed result: 0
+
+2018-05-18 14:13:16,520:main_proj2_python:Divisable_by: n = 14, limit = 200
+2018-05-18 14:13:16,520:main_proj2_python:Divisable_by: n = 30, limit = 200
+2018-05-18 14:13:16,526:main_proj2_python:Half: matrix = [], k = 0 
+2018-05-18 14:13:16,529:main_proj2_python:Half result: []
+2018-05-18 14:13:16,530:main_proj2_python:Half: matrix = [], k = 1 
+2018-05-18 14:13:16,531:main_proj2_python:Half result: []
+2018-05-18 14:13:16,531:main_proj2_python:Half: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], k = 1 
+2018-05-18 14:13:16,532:main_proj2_python:Half result: [[1], [6, 7], [11, 12, 13], [16, 'stam', 18, 19]]
+2018-05-18 14:13:16,532:main_proj2_python:Half: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], k = 0 
+2018-05-18 14:13:16,532:main_proj2_python:Half result: [[1, 2, 3, 4, 5], [7, 8, 9, 'spam'], [13, 14, 15], [19, 20]]
+2018-05-18 14:13:16,532:main_proj2_python:Half: matrix = [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], k = 0 
+2018-05-18 14:13:16,532:main_proj2_python:Half result: [[1, 2, 3, 4, 5], [2, 3, 4, 5], [8, 9, 'spam'], [14, 15], [20]]
+2018-05-18 14:14:05,581:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 14:14:05,581:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 14:14:05,581:__main__:Gui started
+2018-05-18 14:14:05,690:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 14:14:05,690:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 14:14:05,691:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 14:14:05,695:__main__:Gui refresh_frame finished
+2018-05-18 14:14:05,695:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:14:05,695:__main__:text_area2 data = 0
+
+2018-05-18 14:14:06,848:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:14:06,848:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:14:06,848:__main__:text_area2 data = 0
+
+2018-05-18 14:14:06,848:__main__:Executing option0
+2018-05-18 14:14:06,848:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:14:06,848:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 14:14:06,848:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 14:14:06,848:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 14:14:06,849:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 14:14:06,849:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 14:14:06,850:__main__:Execute_pressed result: Result:
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+

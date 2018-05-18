@@ -12,7 +12,7 @@ logger.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
 logger_file_name = 'Python_HW2Python_Logs.txt'
-file_handler = logging.FileHandler(logger_file_name, mode='w')
+file_handler = logging.FileHandler(logger_file_name, mode='a')
 file_handler.setFormatter(formatter)
 
 stream_handler = logging.StreamHandler()
@@ -157,7 +157,7 @@ def str_to_list(string):
             li.append(int(x))
         except ValueError:
             li = []
-            logger.error(f"could not convert {x} into int, returning an empty list")
+            logger.debug(f"could not convert {x} into int, returning an empty list")
             return li
     return li
 
@@ -305,9 +305,9 @@ class UserInterface:
             param2 = param2.splitlines()[0]
             function_output = str(list(islice(func(param1, param2), 0, None)))
 
-        string = "Result:\n"+function_output
-        self.function_output_label.config(text=string)
-        logger.debug(f"Execute_pressed result: {self.text_area2.get('1.0', END)}")
+        res = "Result:\n"+function_output
+        self.function_output_label.config(text=res)
+        logger.debug(f"Execute_pressed result: {res}")
 
 
 if __name__ == "__main__":
