@@ -16,3 +16,1440 @@
 
 2018-05-16 13:27:45,721:__main__:text_area2 data = 0
 
+2018-05-18 03:43:47,261:__main__:Gui started
+2018-05-18 03:43:47,373:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 03:43:47,373:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 03:43:47,373:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 03:43:47,377:__main__:Gui refresh_frame finished
+2018-05-18 03:43:47,377:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 03:43:47,377:__main__:text_area2 data = 0
+
+2018-05-18 03:44:02,649:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 03:44:02,649:__main__:Gui refresh_frame finished
+2018-05-18 03:44:02,649:__main__:text_area1 data = <generator object divisable_by at 0x0501C9C0>
+
+2018-05-18 03:44:02,649:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:44:13,782:__main__:Gui started
+2018-05-18 03:44:14,002:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 03:44:14,002:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 03:44:14,002:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 03:44:14,009:__main__:Gui refresh_frame finished
+2018-05-18 03:44:14,009:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 03:44:14,009:__main__:text_area2 data = 0
+
+2018-05-18 03:44:18,082:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 03:44:18,082:__main__:Gui refresh_frame finished
+2018-05-18 03:44:18,082:__main__:text_area1 data = <generator object divisable_by at 0x0507C9C0>
+
+2018-05-18 03:44:18,082:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:44:25,704:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:44:25,704:__main__:text_area1 data = 1, 2, 3, 4, 5, 4
+
+2018-05-18 03:44:25,704:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:44:25,704:__main__:Merge: iterable1 = 1, 2, 3, 4, 5, 4
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:44:35,697:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:44:35,697:__main__:text_area1 data = 1 2 4 5 7 2 3
+
+2018-05-18 03:44:35,697:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:44:35,697:__main__:Merge: iterable1 = 1 2 4 5 7 2 3
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:00,476:__main__:Gui started
+2018-05-18 03:45:00,522:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 03:45:00,523:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 03:45:00,523:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 03:45:00,524:__main__:Gui refresh_frame finished
+2018-05-18 03:45:00,524:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 03:45:00,524:__main__:text_area2 data = 0
+
+2018-05-18 03:45:02,881:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 03:45:02,881:__main__:Gui refresh_frame finished
+2018-05-18 03:45:02,882:__main__:text_area1 data = <generator object divisable_by at 0x0564C9C0>
+
+2018-05-18 03:45:02,882:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:08,096:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:45:08,096:__main__:text_area1 data = 1 2 3 4 5
+
+2018-05-18 03:45:08,096:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:08,096:__main__:Merge: iterable1 = 1 2 3 4 5
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:08,096:__main__:Merge yield: 
+
+2018-05-18 03:45:08,096:__main__:Merge yield:  
+2018-05-18 03:45:08,096:__main__:Merge yield: 0
+2018-05-18 03:45:08,097:__main__:Merge yield: 1
+2018-05-18 03:45:08,097:__main__:Merge yield: 2
+2018-05-18 03:45:08,097:__main__:Merge yield: 3
+2018-05-18 03:45:08,097:__main__:Merge yield: 4
+2018-05-18 03:45:08,097:__main__:Merge yield: 5
+2018-05-18 03:45:08,097:__main__:Merge yield: 6
+2018-05-18 03:45:08,097:__main__:Merge yield: 7
+2018-05-18 03:45:08,097:__main__:Merge yield: 8
+2018-05-18 03:45:08,097:__main__:Merge: yield finished
+2018-05-18 03:45:08,097:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:44,312:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:45:44,312:__main__:text_area1 data = 1 2 3 4 5 5 2 3
+
+2018-05-18 03:45:44,312:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:44,313:__main__:Merge: iterable1 = 1 2 3 4 5 5 2 3
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:44,313:__main__:Merge yield: 
+
+2018-05-18 03:45:44,313:__main__:Merge yield:  
+2018-05-18 03:45:44,313:__main__:Merge yield: 0
+2018-05-18 03:45:44,313:__main__:Merge yield: 1
+2018-05-18 03:45:44,313:__main__:Merge yield: 2
+2018-05-18 03:45:44,313:__main__:Merge yield: 3
+2018-05-18 03:45:44,313:__main__:Merge yield: 4
+2018-05-18 03:45:44,313:__main__:Merge yield: 5
+2018-05-18 03:45:44,313:__main__:Merge yield: 6
+2018-05-18 03:45:44,313:__main__:Merge yield: 7
+2018-05-18 03:45:44,314:__main__:Merge yield: 8
+2018-05-18 03:45:44,314:__main__:Merge: yield finished
+2018-05-18 03:45:44,314:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:45,520:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:45:45,520:__main__:text_area1 data = 1 2 3 4 5 5 2 3
+
+2018-05-18 03:45:45,520:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:45,520:__main__:Merge: iterable1 = 1 2 3 4 5 5 2 3
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:45,520:__main__:Merge yield: 
+
+2018-05-18 03:45:45,521:__main__:Merge yield:  
+2018-05-18 03:45:45,521:__main__:Merge yield: 0
+2018-05-18 03:45:45,521:__main__:Merge yield: 1
+2018-05-18 03:45:45,521:__main__:Merge yield: 2
+2018-05-18 03:45:45,521:__main__:Merge yield: 3
+2018-05-18 03:45:45,521:__main__:Merge yield: 4
+2018-05-18 03:45:45,521:__main__:Merge yield: 5
+2018-05-18 03:45:45,521:__main__:Merge yield: 6
+2018-05-18 03:45:45,521:__main__:Merge yield: 7
+2018-05-18 03:45:45,521:__main__:Merge yield: 8
+2018-05-18 03:45:45,521:__main__:Merge: yield finished
+2018-05-18 03:45:45,521:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:49,032:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:45:49,032:__main__:text_area1 data = 1
+
+2018-05-18 03:45:49,032:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:49,032:__main__:Merge: iterable1 = 1
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:49,032:__main__:Merge yield: 
+
+2018-05-18 03:45:49,032:__main__:Merge yield:  
+2018-05-18 03:45:49,032:__main__:Merge yield: 0
+2018-05-18 03:45:49,032:__main__:Merge yield: 1
+2018-05-18 03:45:49,033:__main__:Merge yield: 2
+2018-05-18 03:45:49,033:__main__:Merge yield: 3
+2018-05-18 03:45:49,033:__main__:Merge yield: 4
+2018-05-18 03:45:49,033:__main__:Merge yield: 6
+2018-05-18 03:45:49,033:__main__:Merge yield: 7
+2018-05-18 03:45:49,033:__main__:Merge yield: 8
+2018-05-18 03:45:49,033:__main__:Merge: yield finished
+2018-05-18 03:45:49,033:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:45:55,824:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:45:55,824:__main__:text_area1 data = 1
+
+2018-05-18 03:45:55,824:__main__:text_area2 data = 3 4 8 10 11 12 16 20
+
+2018-05-18 03:45:55,824:__main__:Merge: iterable1 = 1
+, iterable2 = 3 4 8 10 11 12 16 20
+
+2018-05-18 03:45:55,824:__main__:Merge yield: 
+
+2018-05-18 03:45:55,824:__main__:Merge yield:  
+2018-05-18 03:45:55,824:__main__:Merge yield: 0
+2018-05-18 03:45:55,825:__main__:Merge yield: 1
+2018-05-18 03:45:55,825:__main__:Merge yield: 2
+2018-05-18 03:45:55,825:__main__:Merge yield: 3
+2018-05-18 03:45:55,825:__main__:Merge yield: 4
+2018-05-18 03:45:55,825:__main__:Merge yield: 6
+2018-05-18 03:45:55,825:__main__:Merge yield: 8
+2018-05-18 03:45:55,825:__main__:Merge: yield finished
+2018-05-18 03:45:55,825:__main__:Execute_pressed result: 3 4 8 10 11 12 16 20
+
+2018-05-18 03:45:59,511:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:45:59,512:__main__:text_area1 data = 1
+
+2018-05-18 03:45:59,512:__main__:text_area2 data = 3 4 10 11 12 16 20
+
+2018-05-18 03:45:59,512:__main__:Merge: iterable1 = 1
+, iterable2 = 3 4 10 11 12 16 20
+
+2018-05-18 03:45:59,512:__main__:Merge yield: 
+
+2018-05-18 03:45:59,512:__main__:Merge yield:  
+2018-05-18 03:45:59,512:__main__:Merge yield: 0
+2018-05-18 03:45:59,512:__main__:Merge yield: 1
+2018-05-18 03:45:59,512:__main__:Merge yield: 2
+2018-05-18 03:45:59,512:__main__:Merge yield: 3
+2018-05-18 03:45:59,512:__main__:Merge yield: 4
+2018-05-18 03:45:59,512:__main__:Merge yield: 6
+2018-05-18 03:45:59,512:__main__:Merge: yield finished
+2018-05-18 03:45:59,512:__main__:Execute_pressed result: 3 4 10 11 12 16 20
+
+2018-05-18 03:46:03,080:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:46:03,080:__main__:text_area1 data = 1
+
+2018-05-18 03:46:03,080:__main__:text_area2 data = 8
+
+2018-05-18 03:46:03,080:__main__:Merge: iterable1 = 1
+, iterable2 = 8
+
+2018-05-18 03:46:03,080:__main__:Merge yield: 
+
+2018-05-18 03:46:03,080:__main__:Merge yield: 1
+2018-05-18 03:46:03,080:__main__:Merge yield: 8
+2018-05-18 03:46:03,080:__main__:Merge: yield finished
+2018-05-18 03:46:03,080:__main__:Execute_pressed result: 8
+
+2018-05-18 03:46:06,504:__main__:Execute_pressed (execution button pressed)
+2018-05-18 03:46:06,504:__main__:text_area1 data = 
+
+2018-05-18 03:46:06,504:__main__:text_area2 data = 
+
+2018-05-18 03:46:06,504:__main__:Merge: iterable1 = 
+, iterable2 = 
+
+2018-05-18 03:46:06,504:__main__:Merge yield: 
+
+2018-05-18 03:46:06,504:__main__:Merge: yield finished
+2018-05-18 03:46:06,505:__main__:Execute_pressed result: 
+
+2018-05-18 03:47:27,731:__main__:Gui started
+2018-05-18 03:47:27,777:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 03:47:27,777:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 03:47:27,778:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 03:47:27,779:__main__:Gui refresh_frame finished
+2018-05-18 03:47:27,779:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 03:47:27,779:__main__:text_area2 data = 0
+
+2018-05-18 03:47:32,233:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 03:47:32,234:__main__:Gui refresh_frame finished
+2018-05-18 03:47:32,234:__main__:text_area1 data = <generator object divisable_by at 0x0500C9C0>
+
+2018-05-18 03:47:32,234:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 03:59:53,759:__main__:Gui started
+2018-05-18 03:59:53,812:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 03:59:53,813:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 03:59:53,813:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 03:59:53,814:__main__:Gui refresh_frame finished
+2018-05-18 03:59:53,815:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 03:59:53,815:__main__:text_area2 data = 0
+
+2018-05-18 03:59:56,601:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-18 03:59:56,602:__main__:Gui refresh_frame finished
+2018-05-18 03:59:56,602:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 03:59:56,602:__main__:text_area2 data = total
+
+2018-05-18 04:00:04,543:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:00:04,543:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:00:04,543:__main__:text_area2 data = total
+
+2018-05-18 04:00:34,456:__main__:Gui started
+2018-05-18 04:00:34,505:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:00:34,505:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:00:34,505:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:00:34,507:__main__:Gui refresh_frame finished
+2018-05-18 04:00:34,507:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:00:34,507:__main__:text_area2 data = 0
+
+2018-05-18 04:00:36,969:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-18 04:00:36,970:__main__:Gui refresh_frame finished
+2018-05-18 04:00:36,970:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:00:36,970:__main__:text_area2 data = total
+
+2018-05-18 04:00:38,303:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:00:38,304:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:00:38,304:__main__:text_area2 data = total
+
+2018-05-18 04:01:13,736:__main__:Gui started
+2018-05-18 04:01:13,784:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:01:13,784:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:01:13,785:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:01:13,786:__main__:Gui refresh_frame finished
+2018-05-18 04:01:13,786:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:01:13,787:__main__:text_area2 data = 0
+
+2018-05-18 04:01:16,655:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:16,655:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:01:16,656:__main__:text_area2 data = 0
+
+2018-05-18 04:01:16,656:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:01:16,656:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 04:01:16,656:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 04:01:16,656:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 04:01:16,656:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 04:01:16,656:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 04:01:16,657:__main__:Execute_pressed result: 0
+
+2018-05-18 04:01:21,775:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:21,776:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:01:21,776:__main__:text_area2 data = 1
+
+2018-05-18 04:01:21,776:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:01:21,776:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 04:01:21,776:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 1 
+2018-05-18 04:01:21,776:__main__:Half result: [['1'], ['6', '7'], ['11', '12', '13'], ['16', 'stam', '18', '19'], []]
+2018-05-18 04:01:21,776:__main__:Matrix_to_str: matrix = [['1'], ['6', '7'], ['11', '12', '13'], ['16', 'stam', '18', '19'], []], param = 1
+2018-05-18 04:01:21,776:__main__:Matrix_to_str result: 
+1         
+6         7         
+11        12        13        
+16        stam      18        19        
+
+
+2018-05-18 04:01:21,776:__main__:Execute_pressed result: 1
+
+2018-05-18 04:01:24,849:__main__:Gui refresh_frame: choice = Question 2 - decrypt
+2018-05-18 04:01:24,849:__main__:Gui refresh_frame finished
+2018-05-18 04:01:24,849:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:24,849:__main__:text_area2 data = 3
+
+2018-05-18 04:01:26,143:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:26,144:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:26,144:__main__:text_area2 data = 3
+
+2018-05-18 04:01:26,144:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 3
+2018-05-18 04:01:26,144:__main__:Decrypt result: solongandthanksforthefish
+
+2018-05-18 04:01:26,144:__main__:Execute_pressed result: 3
+
+2018-05-18 04:01:30,463:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:30,464:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:30,464:__main__:text_area2 data = 0
+
+2018-05-18 04:01:30,464:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 0
+2018-05-18 04:01:30,464:__main__:Decrypt result: vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:30,464:__main__:Execute_pressed result: 0
+
+2018-05-18 04:01:34,263:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:34,264:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:34,264:__main__:text_area2 data = -1
+
+2018-05-18 04:01:34,264:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = -1
+2018-05-18 04:01:34,264:__main__:Decrypt result: wspsrkerhxlerowjsvxlijmwl
+
+2018-05-18 04:01:34,264:__main__:Execute_pressed result: -1
+
+2018-05-18 04:01:38,303:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:38,303:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:38,304:__main__:text_area2 data = -27
+
+2018-05-18 04:01:38,304:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = -27
+2018-05-18 04:01:38,304:__main__:Decrypt result: wspsrkerhxlerowjsvxlijmwl
+
+2018-05-18 04:01:38,304:__main__:Execute_pressed result: -27
+
+2018-05-18 04:01:38,856:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:38,856:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:38,856:__main__:text_area2 data = -27
+
+2018-05-18 04:01:38,856:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = -27
+2018-05-18 04:01:38,856:__main__:Decrypt result: wspsrkerhxlerowjsvxlijmwl
+
+2018-05-18 04:01:38,856:__main__:Execute_pressed result: -27
+
+2018-05-18 04:01:42,015:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:42,016:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:42,016:__main__:text_area2 data = -26
+
+2018-05-18 04:01:42,016:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = -26
+2018-05-18 04:01:42,016:__main__:Decrypt result: vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:42,016:__main__:Execute_pressed result: -26
+
+2018-05-18 04:01:46,535:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:01:46,535:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:01:46,535:__main__:text_area2 data = -23
+
+2018-05-18 04:01:46,535:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = -23
+2018-05-18 04:01:46,535:__main__:Decrypt result: solongandthanksforthefish
+
+2018-05-18 04:01:46,535:__main__:Execute_pressed result: -23
+
+2018-05-18 04:03:55,124:__main__:Gui started
+2018-05-18 04:03:55,170:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:03:55,171:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:03:55,171:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:03:55,172:__main__:Gui refresh_frame finished
+2018-05-18 04:03:55,173:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:03:55,173:__main__:text_area2 data = 0
+
+2018-05-18 04:03:57,041:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-18 04:03:57,041:__main__:Gui refresh_frame finished
+2018-05-18 04:03:57,041:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:03:57,041:__main__:text_area2 data = total
+
+2018-05-18 04:03:58,087:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:03:58,087:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:03:58,088:__main__:text_area2 data = total
+
+2018-05-18 04:03:58,088:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+2018-05-18 04:03:58,088:__main__:Rank yield: USA:2521
+2018-05-18 04:03:58,088:__main__:Rank yield: Great-Britain:847
+2018-05-18 04:03:58,088:__main__:Rank yield: Israel:9
+2018-05-18 04:03:58,088:__main__:Rank: yield finished
+2018-05-18 04:03:58,088:__main__:Execute_pressed result: total
+
+2018-05-18 04:04:10,199:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:04:10,199:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:04:10,199:__main__:text_area2 data = weighted
+
+2018-05-18 04:04:10,199:__main__:Rank: file_name = winners_test.txt, hot_to_rank=weighted
+2018-05-18 04:04:10,200:__main__:Rank yield: USA:5359
+2018-05-18 04:04:10,200:__main__:Rank yield: Great-Britain:1668
+2018-05-18 04:04:10,200:__main__:Rank yield: Israel:12
+2018-05-18 04:04:10,200:__main__:Rank: yield finished
+2018-05-18 04:04:10,200:__main__:Execute_pressed result: weighted
+
+2018-05-18 04:05:30,714:__main__:Gui started
+2018-05-18 04:05:30,763:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:05:30,763:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:05:30,763:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:05:30,764:__main__:Gui refresh_frame finished
+2018-05-18 04:05:30,764:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:05:30,764:__main__:text_area2 data = 0
+
+2018-05-18 04:05:33,657:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:05:33,657:__main__:Gui refresh_frame finished
+2018-05-18 04:05:33,658:__main__:text_area1 data = <generator object divisable_by at 0x05CDC9C0>
+
+2018-05-18 04:05:33,658:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:05:41,615:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:05:41,615:__main__:text_area1 data = 1 2 3 4
+
+2018-05-18 04:05:41,615:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:05:41,615:__main__:Merge: iterable1 = 1 2 3 4
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:05:41,615:__main__:Merge yield: 
+
+2018-05-18 04:05:41,615:__main__:Merge yield:  
+2018-05-18 04:05:41,616:__main__:Merge yield: 0
+2018-05-18 04:05:41,616:__main__:Merge yield: 1
+2018-05-18 04:05:41,616:__main__:Merge yield: 2
+2018-05-18 04:05:41,616:__main__:Merge yield: 3
+2018-05-18 04:05:41,616:__main__:Merge yield: 4
+2018-05-18 04:05:41,616:__main__:Merge yield: 6
+2018-05-18 04:05:41,616:__main__:Merge yield: 7
+2018-05-18 04:05:41,616:__main__:Merge yield: 8
+2018-05-18 04:05:41,616:__main__:Merge: yield finished
+2018-05-18 04:05:41,616:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:07:56,353:__main__:Gui started
+2018-05-18 04:07:56,398:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:07:56,398:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:07:56,398:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:07:56,401:__main__:Gui refresh_frame finished
+2018-05-18 04:07:56,401:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:07:56,401:__main__:text_area2 data = 0
+
+2018-05-18 04:07:59,625:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:07:59,625:__main__:Gui refresh_frame finished
+2018-05-18 04:07:59,625:__main__:text_area1 data = <generator object divisable_by at 0x0526C960>
+
+2018-05-18 04:07:59,625:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:08:05,271:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:08:05,271:__main__:text_area1 data = 1 4 6 3
+
+2018-05-18 04:08:05,271:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:08:05,271:__main__:Merge: iterable1 = 1 4 6 3
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:08:05,271:__main__:merged iterables to list:['\n', ' ', '0', '1', '2', '3', '4', '6', '7', '8']
+2018-05-18 04:08:05,271:__main__:Merge yield: 
+
+2018-05-18 04:08:05,271:__main__:Merge yield:  
+2018-05-18 04:08:05,272:__main__:Merge yield: 0
+2018-05-18 04:08:05,272:__main__:Merge yield: 1
+2018-05-18 04:08:05,272:__main__:Merge yield: 2
+2018-05-18 04:08:05,272:__main__:Merge yield: 3
+2018-05-18 04:08:05,272:__main__:Merge yield: 4
+2018-05-18 04:08:05,272:__main__:Merge yield: 6
+2018-05-18 04:08:05,272:__main__:Merge yield: 7
+2018-05-18 04:08:05,272:__main__:Merge yield: 8
+2018-05-18 04:08:05,272:__main__:Merge: yield finished
+2018-05-18 04:08:05,272:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:11:56,374:__main__:Gui started
+2018-05-18 04:11:56,419:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:11:56,420:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:11:56,420:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:11:56,421:__main__:Gui refresh_frame finished
+2018-05-18 04:11:56,421:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:11:56,421:__main__:text_area2 data = 0
+
+2018-05-18 04:11:58,945:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:11:58,945:__main__:Gui refresh_frame finished
+2018-05-18 04:11:58,945:__main__:text_area1 data = <generator object divisable_by at 0x059CC960>
+
+2018-05-18 04:11:58,945:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:12:04,792:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:12:04,792:__main__:text_area1 data = 1 2 3 
+
+2018-05-18 04:12:04,792:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:12:04,792:__main__:Merge: iterable1 = 1 2 3 
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:12:08,991:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:12:08,991:__main__:text_area1 data = 1 2 3
+
+2018-05-18 04:12:08,992:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:12:08,992:__main__:Merge: iterable1 = 1 2 3
+, iterable2 = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:16:20,420:__main__:Gui started
+2018-05-18 04:16:20,465:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:16:20,465:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:16:20,466:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:16:20,467:__main__:Gui refresh_frame finished
+2018-05-18 04:16:20,467:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:16:20,467:__main__:text_area2 data = 0
+
+2018-05-18 04:16:22,720:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:16:22,720:__main__:Gui refresh_frame finished
+2018-05-18 04:16:22,721:__main__:text_area1 data = <generator object divisable_by at 0x0546B960>
+
+2018-05-18 04:16:22,721:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:16:27,688:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:16:27,688:__main__:text_area1 data = 1 2 3 7 4
+
+2018-05-18 04:16:27,688:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:16:27,688:__main__:Merge: iterable1 = [1, 2, 3, 7, 4], iterable2 = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 04:16:27,688:__main__:merged iterables to list:[1, 2, 3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 04:16:27,688:__main__:Merge yield: 1
+2018-05-18 04:16:27,688:__main__:Merge yield: 2
+2018-05-18 04:16:27,688:__main__:Merge yield: 3
+2018-05-18 04:16:27,688:__main__:Merge yield: 4
+2018-05-18 04:16:27,688:__main__:Merge yield: 7
+2018-05-18 04:16:27,688:__main__:Merge yield: 8
+2018-05-18 04:16:27,688:__main__:Merge yield: 10
+2018-05-18 04:16:27,688:__main__:Merge yield: 11
+2018-05-18 04:16:27,688:__main__:Merge yield: 12
+2018-05-18 04:16:27,689:__main__:Merge yield: 16
+2018-05-18 04:16:27,689:__main__:Merge yield: 20
+2018-05-18 04:16:27,689:__main__:Merge: yield finished
+2018-05-18 04:16:27,689:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:16:41,928:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:16:41,928:__main__:text_area1 data = 100 32 12 65 23
+
+2018-05-18 04:16:41,928:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:16:41,928:__main__:Merge: iterable1 = [100, 32, 12, 65, 23], iterable2 = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 04:16:41,928:__main__:merged iterables to list:[3, 4, 7, 8, 10, 11, 12, 16, 20, 23, 32, 65, 100]
+2018-05-18 04:16:41,928:__main__:Merge yield: 3
+2018-05-18 04:16:41,928:__main__:Merge yield: 4
+2018-05-18 04:16:41,928:__main__:Merge yield: 7
+2018-05-18 04:16:41,928:__main__:Merge yield: 8
+2018-05-18 04:16:41,928:__main__:Merge yield: 10
+2018-05-18 04:16:41,928:__main__:Merge yield: 11
+2018-05-18 04:16:41,928:__main__:Merge yield: 12
+2018-05-18 04:16:41,928:__main__:Merge yield: 16
+2018-05-18 04:16:41,929:__main__:Merge yield: 20
+2018-05-18 04:16:41,929:__main__:Merge yield: 23
+2018-05-18 04:16:41,929:__main__:Merge yield: 32
+2018-05-18 04:16:41,929:__main__:Merge yield: 65
+2018-05-18 04:16:41,929:__main__:Merge yield: 100
+2018-05-18 04:16:41,929:__main__:Merge: yield finished
+2018-05-18 04:16:41,929:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:17:40,196:__main__:Gui started
+2018-05-18 04:17:40,241:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:17:40,242:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:17:40,242:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:17:40,243:__main__:Gui refresh_frame finished
+2018-05-18 04:17:40,243:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:17:40,243:__main__:text_area2 data = 0
+
+2018-05-18 04:17:42,464:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:17:42,464:__main__:Gui refresh_frame finished
+2018-05-18 04:17:42,464:__main__:text_area1 data = <generator object divisable_by at 0x0500B960>
+
+2018-05-18 04:17:42,464:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:18:37,076:__main__:Gui started
+2018-05-18 04:18:37,122:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:18:37,122:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:18:37,122:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:18:37,124:__main__:Gui refresh_frame finished
+2018-05-18 04:18:37,124:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:18:37,124:__main__:text_area2 data = 0
+
+2018-05-18 04:18:41,496:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:18:41,497:__main__:Gui refresh_frame finished
+2018-05-18 04:18:41,497:__main__:text_area1 data = <itertools.islice object at 0x05FBB990>
+
+2018-05-18 04:18:41,497:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:18:52,196:__main__:Gui started
+2018-05-18 04:18:52,241:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:18:52,241:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:18:52,241:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:18:52,243:__main__:Gui refresh_frame finished
+2018-05-18 04:18:52,243:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:18:52,243:__main__:text_area2 data = 0
+
+2018-05-18 04:18:53,600:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:18:53,601:__main__:Gui refresh_frame finished
+2018-05-18 04:18:53,601:__main__:text_area1 data = <itertools.islice object at 0x052EB990>
+
+2018-05-18 04:18:53,601:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:19:47,578:__main__:Divisable_by: n = 4, limit = 21
+2018-05-18 04:19:47,578:__main__:Gui started
+2018-05-18 04:19:47,624:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:19:47,624:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:19:47,624:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:19:47,626:__main__:Gui refresh_frame finished
+2018-05-18 04:19:47,626:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:19:47,626:__main__:text_area2 data = 0
+
+2018-05-18 04:19:49,872:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:19:49,873:__main__:Gui refresh_frame finished
+2018-05-18 04:19:49,873:__main__:text_area1 data = 0 4 8 12 16 20
+
+2018-05-18 04:19:49,873:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:19:51,591:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:19:51,591:__main__:text_area1 data = 0 4 8 12 16 20
+
+2018-05-18 04:19:51,591:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:19:51,591:__main__:Merge: iterable1 = [0, 4, 8, 12, 16, 20], iterable2 = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 04:19:51,591:__main__:merged iterables to list:[0, 3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 04:19:51,591:__main__:Merge yield: 0
+2018-05-18 04:19:51,591:__main__:Merge yield: 3
+2018-05-18 04:19:51,591:__main__:Merge yield: 4
+2018-05-18 04:19:51,591:__main__:Merge yield: 7
+2018-05-18 04:19:51,591:__main__:Merge yield: 8
+2018-05-18 04:19:51,591:__main__:Merge yield: 10
+2018-05-18 04:19:51,591:__main__:Merge yield: 11
+2018-05-18 04:19:51,592:__main__:Merge yield: 12
+2018-05-18 04:19:51,592:__main__:Merge yield: 16
+2018-05-18 04:19:51,592:__main__:Merge yield: 20
+2018-05-18 04:19:51,592:__main__:Merge: yield finished
+2018-05-18 04:19:51,592:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:20:18,151:__main__:Divisable_by: n = 4, limit = 21
+2018-05-18 04:20:18,151:__main__:Gui started
+2018-05-18 04:20:18,196:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:20:18,196:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:20:18,196:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:20:18,197:__main__:Gui refresh_frame finished
+2018-05-18 04:20:18,198:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:20:18,198:__main__:text_area2 data = 0
+
+2018-05-18 04:20:20,513:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:20:20,513:__main__:Gui refresh_frame finished
+2018-05-18 04:20:20,513:__main__:text_area1 data = 4 8 12 16 20
+
+2018-05-18 04:20:20,513:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:20:26,168:__main__:Divisable_by: n = 4, limit = 21
+2018-05-18 04:20:26,168:__main__:Gui started
+2018-05-18 04:20:26,214:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:20:26,214:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:20:26,214:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:20:26,216:__main__:Gui refresh_frame finished
+2018-05-18 04:20:26,216:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:20:26,216:__main__:text_area2 data = 0
+
+2018-05-18 04:20:27,608:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:20:27,608:__main__:Gui refresh_frame finished
+2018-05-18 04:20:27,608:__main__:text_area1 data = 0 4 8 12 16 20
+
+2018-05-18 04:20:27,608:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:20:45,115:__main__:Divisable_by: n = 14, limit = 250
+2018-05-18 04:20:45,115:__main__:Gui started
+2018-05-18 04:20:45,160:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:20:45,160:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:20:45,160:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:20:45,162:__main__:Gui refresh_frame finished
+2018-05-18 04:20:45,162:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:20:45,162:__main__:text_area2 data = 0
+
+2018-05-18 04:20:48,081:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:20:48,081:__main__:Gui refresh_frame finished
+2018-05-18 04:20:48,081:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238
+
+2018-05-18 04:20:48,081:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:20:50,423:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:20:50,423:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238
+
+2018-05-18 04:20:50,423:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:20:50,423:__main__:Merge: iterable1 = [0, 14, 28, 42, 56, 70, 84, 98, 112, 126, 140, 154, 168, 182, 196, 210, 224, 238], iterable2 = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 04:20:50,424:__main__:merged iterables to list:[0, 3, 4, 7, 8, 10, 11, 12, 14, 16, 20, 28, 42, 56, 70, 84, 98, 112, 126, 140, 154, 168, 182, 196, 210, 224, 238]
+2018-05-18 04:20:50,424:__main__:Merge yield: 0
+2018-05-18 04:20:50,424:__main__:Merge yield: 3
+2018-05-18 04:20:50,424:__main__:Merge yield: 4
+2018-05-18 04:20:50,424:__main__:Merge yield: 7
+2018-05-18 04:20:50,424:__main__:Merge yield: 8
+2018-05-18 04:20:50,424:__main__:Merge yield: 10
+2018-05-18 04:20:50,424:__main__:Merge yield: 11
+2018-05-18 04:20:50,424:__main__:Merge yield: 12
+2018-05-18 04:20:50,424:__main__:Merge yield: 14
+2018-05-18 04:20:50,424:__main__:Merge yield: 16
+2018-05-18 04:20:50,424:__main__:Merge yield: 20
+2018-05-18 04:20:50,424:__main__:Merge yield: 28
+2018-05-18 04:20:50,424:__main__:Merge yield: 42
+2018-05-18 04:20:50,424:__main__:Merge yield: 56
+2018-05-18 04:20:50,424:__main__:Merge yield: 70
+2018-05-18 04:20:50,424:__main__:Merge yield: 84
+2018-05-18 04:20:50,424:__main__:Merge yield: 98
+2018-05-18 04:20:50,425:__main__:Merge yield: 112
+2018-05-18 04:20:50,425:__main__:Merge yield: 126
+2018-05-18 04:20:50,425:__main__:Merge yield: 140
+2018-05-18 04:20:50,425:__main__:Merge yield: 154
+2018-05-18 04:20:50,425:__main__:Merge yield: 168
+2018-05-18 04:20:50,425:__main__:Merge yield: 182
+2018-05-18 04:20:50,425:__main__:Merge yield: 196
+2018-05-18 04:20:50,425:__main__:Merge yield: 210
+2018-05-18 04:20:50,425:__main__:Merge yield: 224
+2018-05-18 04:20:50,425:__main__:Merge yield: 238
+2018-05-18 04:20:50,425:__main__:Merge: yield finished
+2018-05-18 04:20:50,425:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:21:12,195:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:21:12,195:__main__:Gui started
+2018-05-18 04:21:12,241:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:21:12,241:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:21:12,241:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:21:12,243:__main__:Gui refresh_frame finished
+2018-05-18 04:21:12,243:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:21:12,243:__main__:text_area2 data = 0
+
+2018-05-18 04:21:14,616:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:21:14,616:__main__:Gui refresh_frame finished
+2018-05-18 04:21:14,616:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:21:14,616:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:21:21,951:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:21:21,951:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:21:21,951:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:21:21,951:__main__:Merge: iterable1 = [0, 14, 28, 42, 56, 70, 84, 98, 112, 126, 140, 154, 168, 182, 196], iterable2 = [3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 04:21:21,951:__main__:merged iterables to list:[0, 3, 4, 7, 8, 10, 11, 12, 14, 16, 20, 28, 42, 56, 70, 84, 98, 112, 126, 140, 154, 168, 182, 196]
+2018-05-18 04:21:21,951:__main__:Merge yield: 0
+2018-05-18 04:21:21,951:__main__:Merge yield: 3
+2018-05-18 04:21:21,951:__main__:Merge yield: 4
+2018-05-18 04:21:21,952:__main__:Merge yield: 7
+2018-05-18 04:21:21,952:__main__:Merge yield: 8
+2018-05-18 04:21:21,952:__main__:Merge yield: 10
+2018-05-18 04:21:21,952:__main__:Merge yield: 11
+2018-05-18 04:21:21,952:__main__:Merge yield: 12
+2018-05-18 04:21:21,952:__main__:Merge yield: 14
+2018-05-18 04:21:21,952:__main__:Merge yield: 16
+2018-05-18 04:21:21,952:__main__:Merge yield: 20
+2018-05-18 04:21:21,952:__main__:Merge yield: 28
+2018-05-18 04:21:21,952:__main__:Merge yield: 42
+2018-05-18 04:21:21,952:__main__:Merge yield: 56
+2018-05-18 04:21:21,952:__main__:Merge yield: 70
+2018-05-18 04:21:21,952:__main__:Merge yield: 84
+2018-05-18 04:21:21,952:__main__:Merge yield: 98
+2018-05-18 04:21:21,952:__main__:Merge yield: 112
+2018-05-18 04:21:21,952:__main__:Merge yield: 126
+2018-05-18 04:21:21,952:__main__:Merge yield: 140
+2018-05-18 04:21:21,952:__main__:Merge yield: 154
+2018-05-18 04:21:21,952:__main__:Merge yield: 168
+2018-05-18 04:21:21,952:__main__:Merge yield: 182
+2018-05-18 04:21:21,953:__main__:Merge yield: 196
+2018-05-18 04:21:21,953:__main__:Merge: yield finished
+2018-05-18 04:21:21,953:__main__:Execute_pressed result: 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:24:24,907:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:24:24,907:__main__:Gui started
+2018-05-18 04:24:24,953:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:24:24,953:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:24:24,953:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:24:24,955:__main__:Gui refresh_frame finished
+2018-05-18 04:24:24,955:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:24:24,955:__main__:text_area2 data = 0
+
+2018-05-18 04:24:26,760:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:24:26,760:__main__:Gui refresh_frame finished
+2018-05-18 04:24:26,760:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:24:26,760:__main__:text_area2 data = 3 4 7 8 10 11 12 16 20
+
+2018-05-18 04:25:17,131:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:25:17,131:__main__:Gui started
+2018-05-18 04:25:17,176:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:25:17,176:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:25:17,176:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:25:17,178:__main__:Gui refresh_frame finished
+2018-05-18 04:25:17,178:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:25:17,178:__main__:text_area2 data = 0
+
+2018-05-18 04:25:19,823:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:25:19,823:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:25:19,823:__main__:text_area2 data = 0
+
+2018-05-18 04:25:19,823:__main__:Executing option0
+2018-05-18 04:25:19,823:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:25:19,824:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 04:25:19,824:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 04:25:19,824:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 04:25:19,824:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 04:25:19,824:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 04:25:19,824:__main__:Execute_pressed result: 0
+
+2018-05-18 04:25:23,902:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:25:23,902:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:25:23,903:__main__:text_area2 data = 1
+
+2018-05-18 04:25:23,903:__main__:Executing option0
+2018-05-18 04:25:23,903:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:25:23,903:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 04:25:23,903:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 1 
+2018-05-18 04:25:23,903:__main__:Half result: [['1'], ['6', '7'], ['11', '12', '13'], ['16', 'stam', '18', '19'], []]
+2018-05-18 04:25:23,903:__main__:Matrix_to_str: matrix = [['1'], ['6', '7'], ['11', '12', '13'], ['16', 'stam', '18', '19'], []], param = 1
+2018-05-18 04:25:23,903:__main__:Matrix_to_str result: 
+1         
+6         7         
+11        12        13        
+16        stam      18        19        
+
+
+2018-05-18 04:25:23,903:__main__:Execute_pressed result: 1
+
+2018-05-18 04:25:25,599:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:25:25,599:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:25:25,599:__main__:text_area2 data = 2
+
+2018-05-18 04:25:25,599:__main__:Executing option0
+2018-05-18 04:25:25,599:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:25:25,599:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 04:25:25,599:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 2 
+2018-05-18 04:25:25,599:__main__:Half result: [[], [], [], [], []]
+2018-05-18 04:25:25,599:__main__:Matrix_to_str: matrix = [[], [], [], [], []], param = 2
+2018-05-18 04:25:25,600:__main__:Matrix_to_str result: 
+
+
+
+
+
+
+2018-05-18 04:25:25,600:__main__:Execute_pressed result: 2
+
+2018-05-18 04:27:18,955:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:27:18,955:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:27:18,955:__main__:Gui started
+2018-05-18 04:27:19,000:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:27:19,001:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:27:19,001:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:27:19,002:__main__:Gui refresh_frame finished
+2018-05-18 04:27:19,002:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:27:19,002:__main__:text_area2 data = 0
+
+2018-05-18 04:27:20,960:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:27:20,960:__main__:Gui refresh_frame finished
+2018-05-18 04:27:20,960:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:27:20,960:__main__:text_area2 data = 0 30 60 90 120 150 180
+
+2018-05-18 04:27:23,550:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:27:23,550:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:27:23,551:__main__:text_area2 data = 0 30 60 90 120 150 180
+
+2018-05-18 04:27:23,551:__main__:Executing option2
+2018-05-18 04:27:23,551:__main__:Merge: iterable1 = [0, 14, 28, 42, 56, 70, 84, 98, 112, 126, 140, 154, 168, 182, 196], iterable2 = [0, 30, 60, 90, 120, 150, 180]
+2018-05-18 04:27:23,551:__main__:merged iterables to list:[0, 14, 28, 30, 42, 56, 60, 70, 84, 90, 98, 112, 120, 126, 140, 150, 154, 168, 180, 182, 196]
+2018-05-18 04:27:23,551:__main__:Merge yield: 0
+2018-05-18 04:27:23,551:__main__:Merge yield: 14
+2018-05-18 04:27:23,551:__main__:Merge yield: 28
+2018-05-18 04:27:23,551:__main__:Merge yield: 30
+2018-05-18 04:27:23,551:__main__:Merge yield: 42
+2018-05-18 04:27:23,551:__main__:Merge yield: 56
+2018-05-18 04:27:23,551:__main__:Merge yield: 60
+2018-05-18 04:27:23,551:__main__:Merge yield: 70
+2018-05-18 04:27:23,551:__main__:Merge yield: 84
+2018-05-18 04:27:23,551:__main__:Merge yield: 90
+2018-05-18 04:27:23,551:__main__:Merge yield: 98
+2018-05-18 04:27:23,551:__main__:Merge yield: 112
+2018-05-18 04:27:23,551:__main__:Merge yield: 120
+2018-05-18 04:27:23,551:__main__:Merge yield: 126
+2018-05-18 04:27:23,552:__main__:Merge yield: 140
+2018-05-18 04:27:23,552:__main__:Merge yield: 150
+2018-05-18 04:27:23,552:__main__:Merge yield: 154
+2018-05-18 04:27:23,552:__main__:Merge yield: 168
+2018-05-18 04:27:23,552:__main__:Merge yield: 180
+2018-05-18 04:27:23,552:__main__:Merge yield: 182
+2018-05-18 04:27:23,552:__main__:Merge yield: 196
+2018-05-18 04:27:23,552:__main__:Merge: yield finished
+2018-05-18 04:27:23,552:__main__:Execute_pressed result: 0 30 60 90 120 150 180
+
+2018-05-18 04:28:45,004:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:28:45,004:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:28:45,004:__main__:Gui started
+2018-05-18 04:28:45,049:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:28:45,050:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:28:45,050:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:28:45,051:__main__:Gui refresh_frame finished
+2018-05-18 04:28:45,051:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:28:45,051:__main__:text_area2 data = 0
+
+2018-05-18 04:28:51,927:__main__:Execute_pressed (execution button pressed)
+2018-05-18 04:28:51,927:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:28:51,927:__main__:text_area2 data = 0
+
+2018-05-18 04:28:51,927:__main__:Executing option0
+2018-05-18 04:28:51,927:__main__:Str_to_matrix: matrix_as_string = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:28:51,927:__main__:Str_to_matrix result: str(matrix) 
+2018-05-18 04:28:51,927:__main__:Half: matrix = [['1', '2', '3', '4', '5'], ['6', '7', '8', '9', 'spam'], ['11', '12', '13', '14', '15'], ['16', 'stam', '18', '19', '20'], []], k = 0 
+2018-05-18 04:28:51,927:__main__:Half result: [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []]
+2018-05-18 04:28:51,927:__main__:Matrix_to_str: matrix = [['1', '2', '3', '4', '5'], ['7', '8', '9', 'spam'], ['13', '14', '15'], ['19', '20'], []], param = 0
+2018-05-18 04:28:51,927:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+          7         8         9         spam      
+                    13        14        15        
+                              19        20        
+                                        
+
+2018-05-18 04:28:51,928:__main__:Execute_pressed result: 0
+
+2018-05-18 04:28:54,864:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:28:54,864:__main__:Gui refresh_frame finished
+2018-05-18 04:28:54,864:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:28:54,864:__main__:text_area2 data = 0 30 60 90 120 150 180
+
+2018-05-18 04:29:04,212:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:29:04,212:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:29:04,212:__main__:Gui started
+2018-05-18 04:29:04,258:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:29:04,258:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:29:04,258:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:29:04,259:__main__:Gui refresh_frame finished
+2018-05-18 04:29:04,259:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:29:04,259:__main__:text_area2 data = 0
+
+2018-05-18 04:30:04,517:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:30:04,517:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:30:04,517:__main__:Gui started
+2018-05-18 04:30:04,562:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:30:04,562:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:30:04,563:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:30:04,565:__main__:Gui refresh_frame finished
+2018-05-18 04:30:04,565:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:30:04,565:__main__:text_area2 data = 0
+
+2018-05-18 04:30:08,216:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:30:08,216:__main__:Gui refresh_frame finished
+2018-05-18 04:30:08,216:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:30:08,216:__main__:text_area2 data = 0 30 60 90 120 150 180
+
+2018-05-18 04:30:13,866:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:30:13,866:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:30:13,866:__main__:Gui started
+2018-05-18 04:30:13,912:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:30:13,912:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:30:13,912:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:30:13,914:__main__:Gui refresh_frame finished
+2018-05-18 04:30:13,914:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:30:13,914:__main__:text_area2 data = 0
+
+2018-05-18 04:34:45,923:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:34:45,923:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:34:45,923:__main__:Gui started
+2018-05-18 04:35:21,593:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:35:21,593:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:35:21,593:__main__:Gui started
+2018-05-18 04:35:54,093:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:35:54,093:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:35:54,094:__main__:Gui started
+2018-05-18 04:37:10,462:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:37:10,462:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:37:10,462:__main__:Gui started
+2018-05-18 04:37:19,611:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:37:19,611:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:37:19,611:__main__:Gui started
+2018-05-18 04:39:22,565:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:39:22,565:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:39:22,565:__main__:Gui started
+2018-05-18 04:39:22,610:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:39:22,612:__main__:Gui refresh_frame finished
+2018-05-18 04:39:22,612:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:39:22,612:__main__:text_area2 data = 0 30 60 90 120 150 180
+
+2018-05-18 04:39:26,720:__main__:Gui refresh_frame: choice = Question 2 - decrypt
+2018-05-18 04:39:26,720:__main__:Gui refresh_frame finished
+2018-05-18 04:39:26,720:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:39:26,720:__main__:text_area2 data = 3
+
+2018-05-18 04:39:28,240:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:39:28,240:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:39:28,240:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:39:28,240:__main__:Gui refresh_frame finished
+2018-05-18 04:39:28,240:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:39:28,240:__main__:text_area2 data = 0
+
+2018-05-18 04:39:39,112:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:39:39,112:__main__:Gui refresh_frame finished
+2018-05-18 04:39:39,112:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:39:39,113:__main__:text_area2 data = 0 30 60 90 120 150 180
+
+2018-05-18 04:39:43,504:__main__:Gui refresh_frame: choice = Question 2 - decrypt
+2018-05-18 04:39:43,504:__main__:Gui refresh_frame finished
+2018-05-18 04:39:43,504:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 04:39:43,505:__main__:text_area2 data = 3
+
+2018-05-18 04:39:46,016:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-18 04:39:46,016:__main__:Gui refresh_frame finished
+2018-05-18 04:39:46,017:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:39:46,017:__main__:text_area2 data = total
+
+2018-05-18 04:41:22,277:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:41:22,277:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:41:22,277:__main__:Gui started
+2018-05-18 04:41:22,328:__main__:Gui refresh_frame: choice = Question 3 - merge
+2018-05-18 04:41:22,330:__main__:Gui refresh_frame finished
+2018-05-18 04:41:22,330:__main__:text_area1 data = 0 14 28 42 56 70 84 98 112 126 140 154 168 182 196
+
+2018-05-18 04:41:22,330:__main__:text_area2 data = 0 30 60 90 120 150 180
+
+2018-05-18 04:41:29,874:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:41:29,874:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:41:29,874:__main__:Gui started
+2018-05-18 04:41:29,920:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-18 04:41:29,922:__main__:Gui refresh_frame finished
+2018-05-18 04:41:29,922:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 04:41:29,922:__main__:text_area2 data = total
+
+2018-05-18 04:41:37,923:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 04:41:37,923:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 04:41:37,923:__main__:Gui started
+2018-05-18 04:41:37,968:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 04:41:37,968:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 04:41:37,968:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 04:41:37,970:__main__:Gui refresh_frame finished
+2018-05-18 04:41:37,970:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 04:41:37,970:__main__:text_area2 data = 0
+
