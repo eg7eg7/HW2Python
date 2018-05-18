@@ -1,5 +1,5 @@
 import unittest
-from proj import *
+from main_proj2_python import *
 
 
 class Test_HW(unittest.TestCase):
