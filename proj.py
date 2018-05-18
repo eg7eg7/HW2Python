@@ -84,7 +84,7 @@ def rank(file_name=file_path, how_to_rank='total'):
         for index in range(len(countries))
     ]
 
-    while len(results_by_rank_type)>0:
+    while len(results_by_rank_type) > 0:
         max_res = -1
         for index, results in enumerate(results_by_rank_type):
             if results_by_rank_type[index] > max_res:
@@ -136,10 +136,17 @@ def str_to_matrix(matrix_as_string):
     return matrix
 
 
+# function designed to convert a string representation of a list of integers into a list, if the string contains non-integer values, returns an empty list
 def str_to_list(string):
+    logger.debug(f"str_to_list: converting the string {string} to a list of type int")
     li = []
     for x in string.split():
-        li.append(int(x))
+        try:
+            li.append(int(x))
+        except ValueError:
+            li = []
+            logger.error(f"could not convert {x} into int, returning an empty list")
+            return li
     return li
 
 
@@ -247,9 +254,13 @@ class UserInterface:
             param1 = matrix_to_str(self.q_param1_list[self.current_option])
         else:
             param1 = self.q_param1_list[self.current_option]
+
         param2 = self.q_param2_list[self.current_option]
         self.text_area1.insert('1.0', param1)
         self.text_area2.insert('1.0', param2)
+
+        self.function_output_label.config(text="")
+
         logger.info("Gui refresh_frame finished")
         logger.debug(f"text_area1 data = {self.text_area1.get('1.0', END)}")
         logger.debug(f"text_area2 data = {self.text_area2.get('1.0', END)}")

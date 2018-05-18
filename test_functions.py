@@ -1,9 +1,8 @@
 import unittest
-from itertools import *
 from proj import *
 
 
-class TestHW(unittest.TestCase):
+class Test_HW(unittest.TestCase):
 
     def test_half(self):
         self.assertEqual(half([], 0), [])
@@ -39,13 +38,13 @@ class TestHW(unittest.TestCase):
 
     def test_rank(self):
         file_name = 'winners_test.txt'
-        self.assertEqual(list(islice(rank(file_name, 'total'), 3)), ["\"USA\":2521", "\"Great-Britain\":847", "\"Israel\":9"])
-        self.assertEqual(list(islice(rank(file_name, 'weighted'), 3)), ["\"USA\":5359", "\"Great-Britain\":1668", "\"Israel\":12"])
-        self.assertEqual(list(islice(rank(file_name, 'gold'), 3)), ["\"USA\":1022", "\"Great-Britain\":263", "\"Israel\":1"])
-        self.assertEqual(list(islice(rank(file_name, 'silver'), 3)), ["\"USA\":794", "\"Great-Britain\":295", "\"Israel\":1"])
-        self.assertEqual(list(islice(rank(file_name, 'arad'), 3)), ["\"USA\":705", "\"Great-Britain\":289", "\"Israel\":7"])
-        self.assertEqual(list(islice(rank(file_name, 'svsd'), 3)), ["\"Israel\":-1", "\"USA\":-1", "\"Great-Britain\":-1"])
+        self.assertEqual(list(islice(rank(file_name, 'total'), 3)), ["USA:2521", "Great-Britain:847", "Israel:9"])
+        self.assertEqual(list(islice(rank(file_name, 'weighted'), 3)), ["USA:5359", "Great-Britain:1668", "Israel:12"])
+        self.assertEqual(list(islice(rank(file_name, 'gold'), 3)), ["USA:1022", "Great-Britain:263", "Israel:1"])
+        self.assertEqual(list(islice(rank(file_name, 'silver'), 3)), ["USA:794", "Great-Britain:295", "Israel:1"])
+        self.assertEqual(list(islice(rank(file_name, 'arad'), 3)), ["USA:705", "Great-Britain:289", "Israel:7"])
+        self.assertEqual(list(islice(rank(file_name, 'svsd'), 3)), ["Israel:-1", "USA:-1", "Great-Britain:-1"])
 
 
 if __name__ == "__main__":
-    unittest.main(exit=False)
+    unittest.main()
