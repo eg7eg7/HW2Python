@@ -6,7 +6,7 @@ from tkinter import *
 from itertools import *
 import logging
 
-'''Logs will be written in file, if previous version exists it will be erased'''
+'''Logs will be written in file'''
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 

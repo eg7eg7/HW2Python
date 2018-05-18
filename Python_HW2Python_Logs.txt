@@ -398,3 +398,136 @@
                               19        20        
                                         
 
+2018-05-18 14:22:00,765:__main__:Divisable_by: n = 14, limit = 200
+2018-05-18 14:22:00,765:__main__:Divisable_by: n = 30, limit = 200
+2018-05-18 14:22:00,765:__main__:Gui started
+2018-05-18 14:22:01,360:__main__:Gui refresh_frame: choice = Question 1 - half
+2018-05-18 14:22:01,361:__main__:Matrix_to_str: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], param = 1
+2018-05-18 14:22:01,361:__main__:Matrix_to_str result: 
+1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+2018-05-18 14:22:01,371:__main__:Gui refresh_frame finished
+2018-05-18 14:22:01,371:__main__:text_area1 data = 1         2         3         4         5         
+6         7         8         9         spam      
+11        12        13        14        15        
+16        stam      18        19        20        
+
+
+2018-05-18 14:22:01,371:__main__:text_area2 data = 0
+
+2018-05-18 14:22:03,720:__main__:Gui refresh_frame: choice = Question 4 - rank
+2018-05-18 14:22:03,720:__main__:Gui refresh_frame finished
+2018-05-18 14:22:03,721:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 14:22:03,721:__main__:text_area2 data = total
+
+2018-05-18 14:22:04,386:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:22:04,386:__main__:text_area1 data = winners_test.txt
+
+2018-05-18 14:22:04,386:__main__:text_area2 data = total
+
+2018-05-18 14:22:04,386:__main__:Executing option3
+2018-05-18 14:22:04,386:__main__:Rank: file_name = winners_test.txt, hot_to_rank=total
+2018-05-18 14:22:04,387:__main__:Rank yield: USA:2521
+2018-05-18 14:22:04,387:__main__:Rank yield: Great-Britain:847
+2018-05-18 14:22:04,387:__main__:Rank yield: Israel:9
+2018-05-18 14:22:04,387:__main__:Rank: yield finished
+2018-05-18 14:22:04,388:__main__:Execute_pressed result: Result:
+['USA:2521', 'Great-Britain:847', 'Israel:9']
+2018-05-18 14:22:06,221:__main__:Gui refresh_frame: choice = Question 2 - decrypt
+2018-05-18 14:22:06,221:__main__:Gui refresh_frame finished
+2018-05-18 14:22:06,222:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 14:22:06,222:__main__:text_area2 data = 3
+
+2018-05-18 14:22:06,810:__main__:Execute_pressed (execution button pressed)
+2018-05-18 14:22:06,810:__main__:text_area1 data = vrorqjdqgwkdqnviruwkhilvk
+
+2018-05-18 14:22:06,811:__main__:text_area2 data = 3
+
+2018-05-18 14:22:06,811:__main__:Executing option1
+2018-05-18 14:22:06,811:__main__:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk
+, key = 3
+2018-05-18 14:22:06,811:__main__:Decrypt result: solongandthanksforthefish
+
+2018-05-18 14:22:06,812:__main__:Execute_pressed result: Result:
+solongandthanksforthefish
+
+2018-05-18 14:22:15,481:main_proj2_python:Divisable_by: n = 14, limit = 200
+2018-05-18 14:22:15,482:main_proj2_python:Divisable_by: n = 30, limit = 200
+2018-05-18 14:22:15,495:main_proj2_python:Decrypt: string = vrorqjdqgwkdqnviruwkhilvk, key = 3
+2018-05-18 14:22:15,495:main_proj2_python:Decrypt result: solongandthanksforthefish
+2018-05-18 14:22:15,495:main_proj2_python:Decrypt: string = vsdp , key = 3
+2018-05-18 14:22:15,495:main_proj2_python:Decrypt result: spam 
+2018-05-18 14:22:15,499:main_proj2_python:Decrypt: string = a, key = 3
+2018-05-18 14:22:15,499:main_proj2_python:Decrypt result: x
+2018-05-18 14:22:15,500:main_proj2_python:Decrypt: string = a, key = 1
+2018-05-18 14:22:15,500:main_proj2_python:Decrypt result: z
+2018-05-18 14:22:15,500:main_proj2_python:Decrypt: string = a, key = 26
+2018-05-18 14:22:15,500:main_proj2_python:Decrypt result: a
+2018-05-18 14:22:15,500:main_proj2_python:Decrypt: string = a, key = 52
+2018-05-18 14:22:15,501:main_proj2_python:Decrypt result: a
+2018-05-18 14:22:15,501:main_proj2_python:Decrypt: string = a, key = 0
+2018-05-18 14:22:15,501:main_proj2_python:Decrypt result: a
+2018-05-18 14:22:15,502:main_proj2_python:Half: matrix = [], k = 0 
+2018-05-18 14:22:15,502:main_proj2_python:Half result: []
+2018-05-18 14:22:15,502:main_proj2_python:Half: matrix = [], k = 1 
+2018-05-18 14:22:15,503:main_proj2_python:Half result: []
+2018-05-18 14:22:15,503:main_proj2_python:Half: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], k = 1 
+2018-05-18 14:22:15,503:main_proj2_python:Half result: [[1], [6, 7], [11, 12, 13], [16, 'stam', 18, 19]]
+2018-05-18 14:22:15,503:main_proj2_python:Half: matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], k = 0 
+2018-05-18 14:22:15,503:main_proj2_python:Half result: [[1, 2, 3, 4, 5], [7, 8, 9, 'spam'], [13, 14, 15], [19, 20]]
+2018-05-18 14:22:15,503:main_proj2_python:Half: matrix = [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [6, 7, 8, 9, 'spam'], [11, 12, 13, 14, 15], [16, 'stam', 18, 19, 20]], k = 0 
+2018-05-18 14:22:15,503:main_proj2_python:Half result: [[1, 2, 3, 4, 5], [2, 3, 4, 5], [8, 9, 'spam'], [14, 15], [20]]
+2018-05-18 14:22:15,505:main_proj2_python:Merge: iterable1 = <generator object divisable_by at 0x000001AB02D18BA0>, iterable2 = [2, 3, 7, 10, 11]
+2018-05-18 14:22:15,505:main_proj2_python:Divisable_by: n = 4, limit = 21
+2018-05-18 14:22:15,505:main_proj2_python:merged iterables to list:[0, 2, 3, 4, 7, 8, 10, 11, 12, 16, 20]
+2018-05-18 14:22:15,505:main_proj2_python:Merge yield: 0
+2018-05-18 14:22:15,505:main_proj2_python:Merge yield: 2
+2018-05-18 14:22:15,506:main_proj2_python:Merge yield: 3
+2018-05-18 14:22:15,506:main_proj2_python:Merge yield: 4
+2018-05-18 14:22:15,506:main_proj2_python:Merge yield: 7
+2018-05-18 14:22:15,506:main_proj2_python:Merge yield: 8
+2018-05-18 14:22:15,506:main_proj2_python:Merge yield: 10
+2018-05-18 14:22:15,508:main_proj2_python:Merge yield: 11
+2018-05-18 14:22:15,508:main_proj2_python:Merge yield: 12
+2018-05-18 14:22:15,508:main_proj2_python:Merge yield: 16
+2018-05-18 14:22:15,508:main_proj2_python:Merge yield: 20
+2018-05-18 14:22:15,508:main_proj2_python:Merge: iterable1 = <generator object divisable_by at 0x000001AB02DD8FC0>, iterable2 = [2, 5, 8, 10]
+2018-05-18 14:22:15,508:main_proj2_python:Divisable_by: n = 3, limit = 35
+2018-05-18 14:22:15,509:main_proj2_python:merged iterables to list:[0, 2, 3, 5, 6, 8, 9, 10, 12, 15, 18, 21, 24, 27, 30, 33]
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 0
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 2
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 3
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 5
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 6
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 8
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 9
+2018-05-18 14:22:15,509:main_proj2_python:Merge yield: 10
+2018-05-18 14:22:15,510:main_proj2_python:Rank: file_name = winners_test.txt, hot_to_rank=total
+2018-05-18 14:22:15,511:main_proj2_python:Rank yield: USA:2521
+2018-05-18 14:22:15,511:main_proj2_python:Rank yield: Great-Britain:847
+2018-05-18 14:22:15,511:main_proj2_python:Rank yield: Israel:9
+2018-05-18 14:22:15,511:main_proj2_python:Rank: file_name = winners_test.txt, hot_to_rank=weighted
+2018-05-18 14:22:15,512:main_proj2_python:Rank yield: USA:5359
+2018-05-18 14:22:15,512:main_proj2_python:Rank yield: Great-Britain:1668
+2018-05-18 14:22:15,512:main_proj2_python:Rank yield: Israel:12
+2018-05-18 14:22:15,512:main_proj2_python:Rank: file_name = winners_test.txt, hot_to_rank=gold
+2018-05-18 14:22:15,513:main_proj2_python:Rank yield: USA:1022
+2018-05-18 14:22:15,513:main_proj2_python:Rank yield: Great-Britain:263
+2018-05-18 14:22:15,513:main_proj2_python:Rank yield: Israel:1
+2018-05-18 14:22:15,513:main_proj2_python:Rank: file_name = winners_test.txt, hot_to_rank=silver
+2018-05-18 14:22:15,542:main_proj2_python:Rank yield: USA:794
+2018-05-18 14:22:15,542:main_proj2_python:Rank yield: Great-Britain:295
+2018-05-18 14:22:15,542:main_proj2_python:Rank yield: Israel:1
+2018-05-18 14:22:15,543:main_proj2_python:Rank: file_name = winners_test.txt, hot_to_rank=arad
+2018-05-18 14:22:15,543:main_proj2_python:Rank yield: USA:705
+2018-05-18 14:22:15,543:main_proj2_python:Rank yield: Great-Britain:289
+2018-05-18 14:22:15,543:main_proj2_python:Rank yield: Israel:7
+2018-05-18 14:22:15,544:main_proj2_python:Rank: file_name = winners_test.txt, hot_to_rank=svsd
+2018-05-18 14:22:15,544:main_proj2_python:Rank yield: Israel:-1
+2018-05-18 14:22:15,544:main_proj2_python:Rank yield: USA:-1
+2018-05-18 14:22:15,544:main_proj2_python:Rank yield: Great-Britain:-1
